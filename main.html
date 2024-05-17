@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cafe-bar solod</title>
+
+    <!-- Подключение boostrap css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Навигационная панель -->
+
+    <nav class="navbar  fixed-top"
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          style="filter: invert(1); border: none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img   src="img/Logo.png" alt="" />
+        <div class="d-flex">
+          <img width="30px" height="30px" style="margin-right: 20px" src="img/telephone.png" alt="" />
+          <p style="color: white; font-size: 18px">+32424242323</p>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+    <!-- Слайдер -->
+<div class="container-fluid first-carousel ">
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/kar1.png" class="d-block w-100" alt="...">
+        <div class=" position-absolute top-50 start-50 translate-middle text-center text-light " >
+          <h1 >Добро пожаловать в Солод!</h1>
+      
+          <p>
+            Откройте двери в мир вкуса и уюта. Погрузитесь атмосферу наших<br />
+            изысканных напитков и блюд
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/kar2.jpg" class="d-block w-100" alt="...">
+        <div class=" position-absolute top-50 start-50 translate-middle text-center text-light " >
+          <h1>Добро пожаловать в Солод!</h1>
+      
+          <p>
+            Откройте двери в мир вкуса и уюта. Погрузитесь атмосферу наших<br />
+            изысканных напитков и блюд
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/kar3.jpg" class="d-block w-100" alt="...">
+        <div class=" position-absolute top-50 start-50 translate-middle text-center text-light " >
+          <h1>Добро пожаловать в Солод!</h1>
+      
+          <p>
+            Откройте двери в мир вкуса и уюта. Погрузитесь атмосферу наших<br />
+            изысканных напитков и блюд
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+    
+
+
+    <!-- Текст -->
+
+    <h1 class="tx1">
+      Приглашаем вас попробовать блюда<br />
+      Белорусско-Польской кухни<br />
+      И уютно провести время.
+    </h1>
+    <br />
+    <br />
+    <br />
+    <p class="tx1">
+      Прогулка по улице Дубровская в Бресте приведет вас в наше уютное кафе-бар. Здесь вы найдете<br />
+      лучшие блюда и напитки, воплощающие атмосферу уюта и тепла. Мы предлагаем широкий выбор<br />
+      блюд, включая бургер из драников, сочную рульку и вкусные не дорогие и сытные обеды, а также<br />
+      фирменые настойки собственного производства.
+      <br />
+      <br />
+      Приходите на обед или ужин, бронируйте столики или остановитесь в нашем уютном заведение на<br />
+      чашечку кофе или чая с вкусным десртом.
+    </p>
+
+    <br />
+    <br />
+    <br />
+    <!-- Слайдер 2  -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/kar1.jpg" class="card-img-top" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Ивенты -->
+
+    <div class="d-flex me-auto ms-auto" style="width: 1200px">
+      <div class="content">
+        <h1>Пятничная вечеринка: Караоке-битва в 'Солод</h1>
+        <p>
+          Готовы ли вы стать звездой нашего караоке-парти?<br />
+          Присоединяйтесь к нам на пятничной вечеринке,<br />
+          где каждый может показать свой вокальный талант и <br />
+          завоевать сердца публики! Специальные призы ждут<br />
+          лучших исполнителей, а атмосфера веселья и радости <br />
+          сделает ваш вечер незабываемым.
+        </p>
+      </div>
+      <img src="img/kar1.jpg" style="width: 600px" alt="" />
+    </div>
+    <br />
+    <br />
+    <div class="d-flex flex-row-reverse me-auto ms-auto" style="width: 1200px">
+      <div class="content text-lg-end">
+        <h1>Вкусовое путешествие: Гастрономия Белоруссии и Польши</h1>
+        <p>
+          Присоединяйтесь к нам в "Солоде" на уникальное кулинарное<br />
+          событие, где вы сможете погрузиться в атмосферу аутентичных<br />
+          вкусов Белоруссии и Польши. Наши шеф-повара приготовят для<br />
+          вас изысканные блюда, воссоздавая традиционные рецепты с <br />
+          неповторимым вкусом и ароматом. Приготовьтесь к удивительному<br />
+          кулинарному путешествию, которое оставит незабываемые впечатления!
+        </p>
+      </div>
+      <img src="img/kar1.jpg" style="width: 600px" alt="" />
+    </div>
+    <br />
+    <br />
+    <div class="d-flex me-auto ms-auto" style="width: 1200px">
+      <div class="content">
+        <h1>Кулинарный мастер-класс: Секреты белорусско-польской кухни</h1>
+        <p>
+          Хотите научиться готовить блюда в стиле белорусско-польской<br />
+          кухни? Присоединяйтесь к нашему кулинарному мастер-классу <br />
+          в "Солоде"! Наши опытные шеф-повара поделятся с вами своими<br />
+          секретами и техниками приготовления самых известных и вкусных<br />
+          блюд этого региона. Получите навыки, которые помогут вам <br />
+          порадовать себя и своих близких аутентичными блюдами прямо<br />
+          у себя дома.
+        </p>
+      </div>
+      <img src="img/kar1.jpg" style="width: 600px" alt="" />
+    </div>
+
+    <!-- Подключение boostrap js и popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
