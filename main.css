@@ -4,7 +4,9 @@
   text-align: center;
 }
 
-
+.navbar-toggler {
+  width: 170px;
+}
 
 .container-fluid>img {
   width: 150px;
