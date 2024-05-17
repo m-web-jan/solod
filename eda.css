@@ -1,7 +1,70 @@
-.carousel-inner {
-    height: 600px !important;
+* шапка */ .navbar-btn span {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-btn {
+    background-color: rgba(0, 0, 0, 0);
+    width: 170px;
+    filter: invert(1);
+    border: none;
+}
+
+.container-fluid>img {
+    width: 150px;
     margin: 0 auto;
 }
+
+/* шапка */
+
+
+/* Меню */
+
+.offcanvas-header {
+    background-color: rgb(48, 45, 43);
+}
+
+.offcanvas-body {
+    background-color: rgba(207, 11, 11, 0.74);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: white;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.offcanvas-header {
+    justify-content: center;
+}
+
+/* Меню */
+
+
+/* первый слайдер */
+
+.first-carousel {
+    padding: 0;
+
+}
+
+.first-carousel .carousel-item {
+    display: flex;
+    max-height: 800px;
+}
+
+.first-carousel .carousel-item img {
+    object-fit: cover;
+}
+
+.first-carousel .carousel-item h1 {
+    font-weight: 700;
+}
+
+/* первый слайдер */
 
 /* Стили "карта еды") */
 .product-card {

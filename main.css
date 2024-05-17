@@ -4,11 +4,12 @@
   text-align: center;
 }
 
-
+/* шапка */
 .navbar-btn span {
   width: 30px;
   height: 30px;
 }
+
 .navbar-btn {
   background-color: rgba(0, 0, 0, 0);
   width: 170px;
@@ -20,6 +21,27 @@
   width: 150px;
   margin: 0 auto;
 }
+
+/* шапка */
+
+
+/* Меню */
+
+.offcanvas-header {
+  background-color: rgb(48, 45, 43);
+}
+
+.offcanvas-body {
+  background-color: rgba(207, 11, 11, 0.74);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: white;
+}
+
+/* Меню */
+
 
 /* первый слайдер */
 
