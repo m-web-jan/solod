@@ -4,8 +4,16 @@
   text-align: center;
 }
 
-.navbar-toggler {
+
+.navbar-btn span {
+  width: 30px;
+  height: 30px;
+}
+.navbar-btn {
+  background-color: rgba(0, 0, 0, 0);
   width: 170px;
+  filter: invert(1);
+  border: none;
 }
 
 .container-fluid>img {
