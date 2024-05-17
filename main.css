@@ -29,6 +29,15 @@
 
 .offcanvas-header {
   background-color: rgb(48, 45, 43);
+  justify-content: center;
+}
+
+.btn-close {
+  margin: 0 !important;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  filter: invert(1);
 }
 
 .offcanvas-body {
