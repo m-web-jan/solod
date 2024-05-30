@@ -1,7 +1,3 @@
-.tx1 {
-  text-align: center;
-}
-
 /* шапка */
 .navbar-btn span {
   width: 30px;
@@ -20,8 +16,7 @@
   margin: 0 auto;
 }
 
-/* шапка */
-
+/* ------------------------------------------- */
 
 /* Меню */
 
@@ -47,8 +42,7 @@
   color: white;
 }
 
-/* Меню */
-
+/* ------------------------------------------- */
 
 /* первый слайдер */
 
@@ -70,9 +64,20 @@
   font-weight: 700;
 }
 
-/* первый слайдер */
+/* ------------------------------------------- */
+/* текст */
+.tx1 {
+  text-align: center;
+  margin: 55px 0 55px 0;
+}
 
+.tx2 {
+  text-align: center;
+  margin-bottom: 55px;
+}
 
+/* ------------------------------------------- */
+/* второй слайдер */
 
 .cards-wrapper {
   display: flex;
@@ -99,38 +104,169 @@
   align-self: stretch;
 }
 
-/* Подвал */
-.footer {
-  background-color: #343434;
+/* ------------------------------------------- */
+/* Обеды */
+
+.list-unstyled li {
+  padding-bottom: 10px;
+  font-size: 20px;
 }
 
-.footer h4 {
-  color: #ccc;
-  text-transform: uppercase;
-  font-size: 16px;
-  border-bottom: 1px solid #666;
-  padding-bottom: 3px;
+.list-unstyled img {
+  width: 29px;
+  height: 29px;
 }
 
-.footer a {
+.text {
+  border-bottom: 3px solid #110d0d;
+  padding-bottom: 10px;
+  margin-top: 32px;
+  font-size: 26px;
+  font-weight: bolder
+}
+
+.ots {
+  margin-top: 150px;
+}
+
+/* ------------------------------------------- */
+/* Рекомендации */
+
+.recomend-card:nth-child(2n+1) {
+  flex-direction: row-reverse;
+  margin-top: 25px;
+}
+
+.cartinka img {
+  width: 100%;
+}
+
+.menu-btn {
+  background-color: #B51B1B;
   text-decoration: none;
-  transition: all .3s;
-}
+  color: #FFFFFF;
+  padding: 5px 10px;
 
-.footer a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.footer a,
-.footer li {
-  color: #c8c8c8;
-}
-
-.footer li a {
-  display: block;
 }
 
 
-
+/* ------------------------------------------- */
 /* Подвал */
+
+.footer {
+  background-image: url('img/footer.png');
+  background-size: cover;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+
+
+}
+
+.footer-blur {
+
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  position: absolute;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+  
+
+}
+
+.footer-section {
+
+  padding: 10px;
+  min-width: 200px;
+  
+
+}
+
+.footer-section h2 {
+  margin-top: 0;
+}
+
+.footer-section img {
+  width: 245px;
+  height: 154px;
+}
+
+.footer-bottom {
+  max-width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+.footer-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+
+
+}
+
+.coperaid {
+  font-size: 15px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .footer-section img {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .coperaid {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer-buttons a {
+    padding: 0px 15px;
+  }
+}
