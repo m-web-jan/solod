@@ -14,6 +14,36 @@
 .container-fluid>img {
   width: 150px;
   margin: 0 auto;
+
+}
+
+
+
+.telephone {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+
+  .telephone {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+    
+  }
+
+  .container-fluid>img {
+    width: 90px;
+    margin: 0 auto;
+  
+  }
+
+  .navbar-btn {
+    width: 10px;
+  }
+
 }
 
 /* ------------------------------------------- */
@@ -23,6 +53,11 @@
 .offcanvas-header {
   justify-content: center;
   background-color: rgba(207, 11, 11, 0.74);
+  
+}
+
+.offcanvas-header img{
+width: 180px;
 }
 
 .btn-close {
@@ -108,7 +143,12 @@
 /* Обеды */
 
 .list-unstyled li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.cena li {
+  padding-bottom: 18px;
   font-size: 20px;
 }
 
@@ -124,6 +164,9 @@
   font-size: 26px;
   font-weight: bolder
 }
+
+
+
 
 .ots {
   margin-top: 150px;
@@ -154,14 +197,14 @@
   .recomend-card {
     flex-direction: column-reverse;
     margin-top: 50px;
-    
+
   }
 
   .recomend-card:nth-child(2n+1) {
-  flex-direction: row-reverse;
-  margin-top: 50px;
-  flex-direction: column-reverse;
-}
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    flex-direction: column-reverse;
+  }
 }
 
 /* ------------------------------------------- */
