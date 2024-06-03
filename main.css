@@ -79,7 +79,7 @@
 
 /* ------------------------------------------- */
 
-/* первый слайдер */
+/* первый слайдер */  
 
 .first-carousel {
   padding: 0;
@@ -97,6 +97,13 @@
 
 .first-carousel .carousel-item h1 {
   font-weight: 700;
+  font-size: 44px;
+}
+
+.first-carousel .carousel-item p {
+  font-size: 18px;
+  
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -238,7 +245,7 @@
 
 
 .ots {
-  margin-top: 150px;
+  margin-top: 45px;
 }
 
 /* ------------------------------------------- */
