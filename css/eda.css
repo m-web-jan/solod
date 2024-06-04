@@ -160,9 +160,7 @@ justify-content: center;
 
 @media screen and (max-width: 767px){
 
-    .bnt-menu{
-
-    }
+   
 
     .content-menu a{
         margin: 0px 20px;
