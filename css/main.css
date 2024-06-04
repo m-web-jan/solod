@@ -448,7 +448,7 @@
 /* Подвал */
 
 .footer {
-  background-image: url('img/footer.png');
+  background-image: url('../img/footer.png');
   background-size: cover;
   color: white;
   padding: 20px 0;
