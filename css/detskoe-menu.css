@@ -1,170 +1,262 @@
 /* шапка */
 .navbar-btn span {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .navbar-btn {
-    background-color: rgba(0, 0, 0, 0);
-    width: 170px;
-    filter: invert(1);
-    border: none;
-  }
-  
-  .container-fluid>img {
-    width: 150px;
-    margin: 0 auto;
-  
-  }
-  
-  
-  
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-btn {
+  background-color: rgba(0, 0, 0, 0);
+  width: 170px;
+  filter: invert(1);
+  border: none;
+}
+
+.container-fluid>img {
+  width: 150px;
+  margin: 0 auto;
+
+}
+
+
+
+.telephone {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+
   .telephone {
-    display: flex;
+    display: none;
   }
-  
-  @media screen and (max-width: 767px) {
-  
-    .telephone {
-      display: none;
-    }
-  
-    .navbar {
-      flex-wrap: nowrap;
-  
-    }
-  
-    .container-fluid>img {
-      width: 90px;
-      margin: 0 auto;
-  
-    }
-  
-    .navbar-btn {
-      width: 10px;
-    }
-  
+
+  .navbar {
+    flex-wrap: nowrap;
+
   }
-  
-  /* ------------------------------------------- */
-  
-  /* Меню */
-  
-  .offcanvas-header {
-    justify-content: center;
-    background-color: rgba(207, 11, 11, 0.74);
-  
+
+  .container-fluid>img {
+    width: 90px;
+    margin: 0 auto;
+
   }
-  
-  .offcanvas-header img {
-    width: 180px;
+
+  .navbar-btn {
+    width: 10px;
   }
-  
-  .btn-close {
-    margin: 0 !important;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    filter: invert(1);
+
+}
+
+/* ------------------------------------------- */
+
+/* Меню */
+
+.offcanvas-header {
+  justify-content: center;
+  background-color: rgba(207, 11, 11, 0.74);
+
+}
+
+.offcanvas-header img {
+  width: 180px;
+}
+
+.btn-close {
+  margin: 0 !important;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  filter: invert(1);
+}
+
+.offcanvas-body {
+  background-color: rgba(207, 11, 11, 0.74);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: white;
+}
+
+/* ------------------------------------------- */
+
+/* первый слайдер */
+
+.first-carousel {
+  padding: 0;
+
+}
+
+.first-carousel .carousel-item {
+  display: flex;
+  max-height: 800px;
+}
+
+.first-carousel .carousel-item img {
+  object-fit: cover;
+}
+
+.first-carousel .carousel-item h1 {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.first-carousel .carousel-item p {
+  font-size: 18px;
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .first-carousel .carousel-item h1 {
+    font-size: 32px;
   }
-  
-  .offcanvas-body {
-    background-color: rgba(207, 11, 11, 0.74);
+
+  .first-carousel .carousel-item p {
+    font-size: 14px;
+    width: 548px;
+
   }
-  
-  .nav-link {
-    font-weight: 500;
-    color: white;
+}
+
+@media screen and (max-width: 767px) {
+
+  .first-carousel .carousel-item h1 {
+    font-size: 24px;
   }
-  
-  /* ------------------------------------------- */
-  
-  /* первый слайдер */  
-  
-  .first-carousel {
-    padding: 0;
-  
+
+  .first-carousel .carousel-item p {
+    font-size: 14px;
+    width: 300px;
+
   }
-  
-  .first-carousel .carousel-item {
-    display: flex;
-    max-height: 800px;
-  }
-  
+
   .first-carousel .carousel-item img {
     object-fit: cover;
+    height: 300px;
+
   }
-  
-  .first-carousel .carousel-item h1 {
-    font-weight: 700;
-    font-size: 44px;
-  }
-  
-  .first-carousel .carousel-item p {
-    font-size: 18px;
-    
-  
-  }
-  
-  @media screen and (max-width: 1200px) {
-    .first-carousel .carousel-item h1 {
-      font-size: 32px;
-    }
-  
-    .first-carousel .carousel-item p {
-      font-size: 14px;
-      width: 548px;
-  
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-  
-    .first-carousel .carousel-item h1 {
-      font-size: 24px;
-    }
-  
-    .first-carousel .carousel-item p {
-      font-size: 14px;
-      width: 300px;
-  
-    }
-  
-    .first-carousel .carousel-item img {
-      object-fit: cover;
-      height: 300px;
-  
-    }
-  
-  }
+
+}
 
 /* ------------------------------------------- */
 /* верхняя часть */
-.med-content{
-  
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16pc;
-    
-}
+.med-content {
 
-.med-content img{
-width: 20%;
-position: absolute;
-left: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16pc;
 
 }
 
-.med-content p{
-    width: 641px;
-    height: 115px;
+.med-content img {
+  width: 20%;
+  position: absolute;
+  left: 0;
+}
+
+.med-content p {
+  width: 641px;
+  height: 115px;
+  border-radius: 16px;
+  background-color: #B51B1B;
+  font-size: 36px;
+  padding: 25px 0 0 35px;
+  margin: 150px auto;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .med-content p {
+    width: 340px;
+    height: 80px;
+    font-size: 20px;
+    padding: 25px 0 0 10px;
+    margin: 150px auto 180px;
+  }
+
+  .med-content img {
+    width: 28%;
+    position: absolute;
+    left: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .med-content p {
+    width: 280px;
+    height: 70px;
+    font-size: 16px;
+    padding: 20px 0 0 15px;
+    margin: 250px auto 30px;
+  }
+
+  .med-content img {
+    width: 50%;
+    position: absolute;
+    left: 0;
+  }
+
+}
+
+/* ------------------------------------------- */
+/* нижнее детское меню */
+
+.med-content1 img {
+  width: 20%;
+  position: absolute;
+  right: 0;
+}
+
+.med-content1 p {
+  width: 641px;
+  height: 115px;
+  border-radius: 16px;
+  background-color: #B51B1B;
+  font-size: 36px;
+  padding: 25px 0 0 160px;
+  margin: 250px auto;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .med-content1 img {
+    width: 30%;
+    position: absolute;
+    right: 0;
+  }
+
+  .med-content1 p {
+    width: 380px;
+    height: 80px;
     border-radius: 16px;
-    background-color: #B51B1B;
-    font-size: 36px;
-    padding: 25px 0 0 50px;
-    margin: 150px auto;
-    color: #ffffff;
+    font-size: 20px;
+    padding: 25px 0 0 100px;
+    margin: 200px auto 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .med-content1 img {
+    width: 55%;
+    position: absolute;
+    right: 0;
+  }
+
+  .med-content1 p {
+    width: 280px;
+    height: 70px;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 20px 0 0 70px;
+    margin: 300px auto 30px;
+  }
 }
 
 /* ------------------------------------------------- */
@@ -173,16 +265,18 @@ left: 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
   transition: all .3s;
   border-radius: 3%;
-  background-color: #8b8b8b;
+  background-color: #E3E3E3;
   margin-top: 40px;
 
 }
+
+@media (hover: hover) {
 
 .product-card:hover {
   box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
   border-radius: 5%;
 }
-
+}
 
 
 .product-photo img {
@@ -230,3 +324,123 @@ left: 0;
 }
 
 /* --------------------------------------------- */
+
+/* Подвал */
+
+.footer {
+  background-image: url('../img/footer.png');
+  background-size: cover;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  margin-top: 40px;
+
+
+}
+
+.footer-blur {
+
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  position: absolute;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+
+
+}
+
+.footer-section {
+
+  padding: 10px;
+  min-width: 200px;
+
+
+}
+
+.footer-section h2 {
+  margin-top: 0;
+}
+
+.footer-section img {
+  width: 245px;
+  height: 154px;
+}
+
+.footer-bottom {
+  max-width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+.footer-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+
+}
+
+.coperaid {
+  font-size: 15px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .footer-section img {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .coperaid {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer-buttons a {
+    padding: 0px 15px;
+  }
+}

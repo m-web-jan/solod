@@ -176,16 +176,17 @@ gap: 16px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
     transition: all .3s;
     border-radius: 3%;
-    background-color: #8b8b8b;
+    background-color: #E3E3E3;
     margin-top: 40px;
 
 }
+@media (hover: hover) {
 
 .product-card:hover {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
     border-radius: 5%;
 }
-
+}
 
 
 .product-photo img {
