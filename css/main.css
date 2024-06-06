@@ -51,14 +51,14 @@
 /* Меню */
 
 .offcanvas-header {
-  justify-content: center;
+  justify-content: cente;
   background-color: rgba(207, 11, 11, 0.74);
 
 }
 
 .offcanvas-header img {
   width: 180px;
-}
+}r
 
 .btn-close {
   margin: 0 !important;
