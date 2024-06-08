@@ -16,7 +16,7 @@
   border: none;
 }
 
-.container-fluid > img {
+.container-fluid>img {
   width: 150px;
   margin: 0 auto;
 }
@@ -34,7 +34,7 @@
     flex-wrap: nowrap;
   }
 
-  .container-fluid > img {
+  .container-fluid>img {
     width: 90px;
     margin: 0 auto;
   }
@@ -48,14 +48,15 @@
 /* Меню */
 
 .offcanvas-header {
-  justify-content: cente;
+  justify-content: center;
   background-color: rgba(207, 11, 11, 0.74);
 }
 
 .offcanvas-header img {
   width: 180px;
 }
-r .btn-close {
+
+ .btn-close {
   margin: 0 !important;
   position: absolute;
   right: 10px;
@@ -128,51 +129,63 @@ r .btn-close {
 main {
   padding: 2rem 0;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
 }
+
 .content iframe {
   max-width: 90%;
 }
+
 @media screen and (max-width: 767px) {
   .content {
     flex-direction: column;
   }
+
   .content iframe {
     max-width: 100%;
   }
 }
+
 .contacts-block {
   background-color: #353535;
   padding: 3rem;
 }
-.contacts-block > img {
+
+.contacts-block>img {
   margin-bottom: 3rem;
   max-width: 100%;
 }
+
 .contacts-block h2 {
   color: #3682b8;
   font-size: 24px;
   margin-bottom: 16px;
 }
-.contacts-block > p {
+
+.contacts-block>p {
   font-size: 16px;
 }
+
 .contacts-block p {
   color: white;
 }
+
 .contacts-block .row {
   display: flex;
   column-gap: 1rem;
   align-items: center;
   margin-bottom: 16px;
 }
+
 .contacts-block .row p {
   display: inline-block;
   max-width: 200px;
   margin: 0;
 }
+
 .contacts-block .row img {
   width: 65px;
 }

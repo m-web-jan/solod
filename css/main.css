@@ -51,16 +51,16 @@
 /* Меню */
 
 .offcanvas-header {
-  justify-content: cente;
+  justify-content: center;
   background-color: rgba(207, 11, 11, 0.74);
 
 }
 
 .offcanvas-header img {
   width: 180px;
-}r
+}
 
-.btn-close {
+ .btn-close {
   margin: 0 !important;
   position: absolute;
   right: 10px;
@@ -79,7 +79,7 @@
 
 /* ------------------------------------------- */
 
-/* первый слайдер */  
+/* первый слайдер */
 
 .first-carousel {
   padding: 0;
@@ -102,7 +102,7 @@
 
 .first-carousel .carousel-item p {
   font-size: 18px;
-  
+
 
 }
 
@@ -203,7 +203,7 @@
     height: 150px;
     object-fit: cover;
   }
- 
+
 }
 
 @media screen and (max-width: 767px) {
