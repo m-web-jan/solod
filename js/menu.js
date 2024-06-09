@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("http://localhost:3000/data")
+    fetch(`http://localhost:3000/data?categoryId=Горячее`)
     .then((response) => response.json())
     .then((data) => {
       displayCards(data);
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function displayCards(data) {
   const cardsBlock = document.getElementsByClassName("main-content")[0].getElementsByClassName("row")[0];
+  cardsBlock.innerHTML = "";
   for (let i = 0; i < data.length; i++) {
     let card = document.createElement("div");
     card.classList.add("col-lg-4");
@@ -38,7 +39,7 @@ function displayCards(data) {
     let cardPrice = document.createElement("div");
     cardPrice.classList.add("product-price");
     let rubles = Math.floor(data[i].price);
-    let kopecks = data[i].price - rubles;
+    let kopecks = (data[i].price - rubles) * 100;
     cardPrice.innerHTML = `${rubles}Р <small>${kopecks}К</small>`;
 
     cardBottom.appendChild(cardPrice);
@@ -54,4 +55,26 @@ function displayCards(data) {
     card.appendChild(cardBody);
     cardsBlock.appendChild(card);
   }
+}
+
+let categoryBtns = document.getElementsByClassName("bnt-menu");
+for(let i=0; i<categoryBtns.length; i++){
+    categoryBtns[i].onclick = () => {
+        for(let i=0; i<categoryBtns.length; i++){
+            categoryBtns[i].classList.remove("active");
+        }
+        categoryBtns[i].classList.add("active");
+        
+        sendRequest(categoryBtns[i].id);
+    }
+}
+
+function sendRequest(category){
+    fetch(`http://localhost:3000/data?categoryId=${category}`)
+    .then((response) => response.json())
+    .then((data) => {
+
+      displayCards(data);
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 }

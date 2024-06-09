@@ -147,7 +147,12 @@
   font-size: 12px;
   border-radius: 15px;
   width: auto;
+  cursor: pointer;
 
+}
+
+.active{
+  background-color: #000000;
 }
 
 .content-menu {
