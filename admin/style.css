@@ -1,0 +1,224 @@
+body {
+    background-color: black;
+    transition: 0.5s;
+    background: url(./1.png) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 1rem;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container input {
+    margin: 0 auto;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid white;
+    color: white;
+    width: 80%;
+    font-size: 1rem;
+
+}
+
+.container input::placeholder {
+    color: white;
+}
+
+.container button {
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #B51B1B;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.container button:hover {
+    background-color: #9b1919;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+table {
+    display: block;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 75vh;
+
+}
+
+tr td:first-child {
+    text-align: center;
+
+}
+
+tr td:first-child img {
+    cursor: pointer;
+    width: 30px;
+}
+
+tr:nth-child(1) {
+    background-color: lightgray;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td,
+th {
+    padding: 5px 10px;
+
+}
+
+td img {
+    width: 100px;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.addBtn {
+    margin-top: 25px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+
+}
+
+.addBtn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.modal-back {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+
+}
+
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(130, 5, 168);
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    max-width: 350px;
+    margin: 0 auto;
+
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+
+.modal-content>input[type="text"],
+select {
+    padding: 5px 15px;
+    outline: none;
+    background-color: #430766;
+}
+
+button {
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.modal-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+.open {
+    display: block;
+}

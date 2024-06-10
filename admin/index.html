@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h2>Вход</h2>
+        <input type="text" placeholder="Логин" />
+        <input type="text" placeholder="Пароль" />
+        <button>Войти</button>
+      </form>
+    </div>
+
+    <div class="modal-back">
+      <form class="modal-content">
+        <h2>Добавление новой позиции:</h2>
+        <input type="text" placeholder="Наименование" required id="name" />
+        <input type="text" placeholder="Описание" required id="description" />
+        <input type="file" required id="file" />
+        <input type="text" placeholder="Категория" required id="category" />
+        <input type="text" placeholder="Вес/Объем" required id="weight" />
+        <input type="text" placeholder="Цена" required id="price" />
+        <button type="submit" class="addNewItem">Добавить</button>
+      </form>
+    </div>
+
+    <script type="module" src="./admin.js"></script>
+  </body>
+</html>

@@ -138,6 +138,47 @@
 
 }
 
+
+
+/* кнопки меню */
+.bnt-menu {
+  background-color: #B51B1B;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 5px 20px;
+  font-size: 12px;
+  border-radius: 15px;
+  width: auto;
+  cursor: pointer;
+
+}
+
+.content-menu .active {
+  background-color: #000000;
+}
+
+.content-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+
+}
+
+@media screen and (max-width: 767px) {
+  .content-menu a {
+    margin: 0px 10px;
+  }
+
+  .content-menu {
+    max-width: 250px;
+    margin: 0 auto;
+
+  }
+}
+
+
 /* ------------------------------------------- */
 /* верхняя часть */
 .med-content {

@@ -151,7 +151,7 @@
 
 }
 
-.active{
+.content-menu .active {
   background-color: #000000;
 }
 
@@ -199,10 +199,10 @@
   }
 }
 
-.product-photo{
-width: 400px;
-height: 450px;
-margin: 0 auto;
+.product-photo {
+  width: 400px;
+  height: 450px;
+  margin: 0 auto;
 }
 
 .product-photo img {
@@ -211,7 +211,7 @@ margin: 0 auto;
   border-radius: 4%;
   object-fit: contain;
   padding: 20px 0 0 0;
-  
+
 }
 
 .product-details {
