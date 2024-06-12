@@ -374,7 +374,6 @@
   color: white;
   padding: 20px 0;
   position: relative;
-  margin-top: 40px;
 
 
 }
@@ -400,20 +399,17 @@
   flex-wrap: wrap;
   z-index: 1;
   position: relative;
-
-
 }
 
 .footer-section {
-
-  padding: 10px;
   min-width: 200px;
-
-
+  font-weight: 500;
 }
 
 .footer-section h2 {
   margin-top: 0;
+  margin-bottom: 24px;
+  color: bisque;
 }
 
 .footer-section img {
@@ -447,12 +443,29 @@
   padding: 10px 20px;
   border-radius: 5px;
   margin: 5px 0;
+  font-weight: 500;
 
 }
 
 .coperaid {
   font-size: 15px;
   align-self: center;
+}
+
+.footer-section a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer-section a>img {
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -477,11 +490,25 @@
   .coperaid {
     margin-top: 20px;
   }
+
+  .footer-section {
+    font-size: 16px;
+    min-width: 200px;
+    margin: 0 auto;
+
+  }
 }
 
 
 @media screen and (max-width: 767px) {
   .footer-buttons a {
     padding: 0px 15px;
+  }
+  .footer-section a{
+    font-size: 16px;
+  }
+
+  .footer-section a>img{
+    margin: 0;
   }
 }
