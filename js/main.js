@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Настройка подключения к базе данных
 const db = mysql.createConnection({
-  host: "MySQL-8.2",
+  // host: "MySQL-8.2",
+  host: "localhost",
   user: "root",
   database: "solod",
   password: "",
@@ -40,7 +41,8 @@ app.get("/admin", (req, res) => {
   const login = req.query.login;
   const password = req.query.password;
   dbAdmin = mysql.createConnection({
-    host: "MySQL-8.2",
+    // host: "MySQL-8.2",
+    host: "localhost",
     user: login,
     database: "solod",
     password: password,
@@ -90,12 +92,12 @@ app.post("/upload", upload.single("file"), (req, res) => {
 });
 
 app.post("/addItem", (req, res) => {
-  const { name, description, fileName, category, weight, price} = req.body;
-  const sql = `INSERT INTO menu ( 'name', 'description', 'weight', 'price', 'category', 'img_url') VALUES ('${name}','${description}','${fileName}','${category}','${weight}','${price}')`;
+  const { name, description, weight, price, category, fileName} = req.body;
+  const sql = `INSERT INTO menu ( name, description, weight, price, category, img_url) VALUES ('${name}','${description}','${weight}','${price}','${category}','${fileName}')`;
 
   dbAdmin.query(sql, (err, result) => {
     if (err) {
-      return res.status(401).json({ error: "Ошибка выполнения запроса" });
+      return res.status(401).json({ error: "Ошибка выполнения запроса 123" });
     }
     res.json(result);
   });
