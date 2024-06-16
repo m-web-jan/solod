@@ -38,7 +38,7 @@
   display: flex;
 }
 
-.telephone a{
+.telephone a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 18px;
@@ -104,6 +104,7 @@
 
 .first-carousel {
   padding: 0;
+  margin-bottom: 30px;
 
 }
 
@@ -187,6 +188,7 @@
 
 }
 
+
 @media screen and (max-width: 767px) {
   .content-menu a {
     margin: 0px 10px;
@@ -200,127 +202,6 @@
 }
 
 
-/* ------------------------------------------- */
-/* верхняя часть */
-.med-content {
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16pc;
-
-}
-
-.med-content img {
-  width: 20%;
-  position: absolute;
-  left: 0;
-}
-
-.med-content p {
-  width: 641px;
-  height: 115px;
-  border-radius: 16px;
-  background-color: #B51B1B;
-  font-size: 36px;
-  padding: 25px 0 0 35px;
-  margin: 150px auto;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 1200px) {
-
-  .med-content p {
-    width: 340px;
-    height: 80px;
-    font-size: 20px;
-    padding: 25px 0 0 10px;
-    margin: 150px auto 180px;
-  }
-
-  .med-content img {
-    width: 28%;
-    position: absolute;
-    left: 0;
-  }
-
-}
-
-
-@media screen and (max-width: 767px) {
-
-  .med-content p {
-    width: 280px;
-    height: 70px;
-    font-size: 16px;
-    padding: 20px 0 0 15px;
-    margin: 250px auto 30px;
-  }
-
-  .med-content img {
-    width: 50%;
-    position: absolute;
-    left: 0;
-  }
-
-}
-
-/* ------------------------------------------- */
-/* нижнее детское меню */
-
-.med-content1 img {
-  width: 20%;
-  position: absolute;
-  right: 0;
-}
-
-.med-content1 p {
-  width: 641px;
-  height: 115px;
-  border-radius: 16px;
-  background-color: #B51B1B;
-  font-size: 36px;
-  padding: 25px 0 0 160px;
-  margin: 250px auto;
-  color: #ffffff;
-}
-
-
-@media screen and (max-width: 1200px) {
-
-  .med-content1 img {
-    width: 30%;
-    position: absolute;
-    right: 0;
-  }
-
-  .med-content1 p {
-    width: 380px;
-    height: 80px;
-    border-radius: 16px;
-    font-size: 20px;
-    padding: 25px 0 0 100px;
-    margin: 200px auto 180px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-
-  .med-content1 img {
-    width: 55%;
-    position: absolute;
-    right: 0;
-  }
-
-  .med-content1 p {
-    width: 280px;
-    height: 70px;
-    border-radius: 16px;
-    font-size: 16px;
-    padding: 20px 0 0 70px;
-    margin: 300px auto 30px;
-  }
-}
-
 /* ------------------------------------------------- */
 /* Стили "карта еды") */
 .product-card {
@@ -332,21 +213,12 @@
 
 }
 
-@media (hover: hover) {
-
-.product-card:hover {
-  box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
-  border-radius: 5%;
-}
-}
-
-
 .product-photo img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   border-radius: 4%;
   object-fit: cover;
-  padding: 20px 0 0 0;
+  padding: 20px ;
 }
 
 .product-details {
@@ -385,8 +257,15 @@
   color: #000000;
 }
 
-/* --------------------------------------------- */
+@media (hover: hover) {
 
+  .product-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+    border-radius: 5%;
+  }
+}
+
+/* --------------------------------------------- */
 /* Подвал */
 
 .footer {
@@ -395,6 +274,7 @@
   color: white;
   padding: 20px 0;
   position: relative;
+  margin-top: 50px;
 
 
 }
@@ -525,11 +405,12 @@
   .footer-buttons a {
     padding: 0px 15px;
   }
-  .footer-section a{
+
+  .footer-section a {
     font-size: 16px;
   }
 
-  .footer-section a>img{
+  .footer-section a>img {
     margin: 0;
   }
 }
