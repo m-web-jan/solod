@@ -18,6 +18,6 @@ for (let i = 0; i < categoryBtns.length; i++) {
     }
     categoryBtns[i].classList.add("active");
 
-    sendRequest(categoryBtns[i].id, "menu");
+    sendRequest(categoryBtns[i].id);
   };
 }

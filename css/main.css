@@ -38,7 +38,7 @@
   display: flex;
 }
 
-.telephone a{
+.telephone a {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 18px;
@@ -70,7 +70,6 @@
 /* ------------------------------------------- */
 
 /* Меню */
-
 .offcanvas-header {
   justify-content: center;
   background-color: rgba(207, 11, 11, 0.74);
@@ -130,8 +129,8 @@
 @media screen and (max-width: 1200px) {
   .first-carousel .carousel-item h1 {
     font-size: 32px;
-    
-    
+
+
   }
 
   .first-carousel .carousel-item p {
@@ -245,10 +244,10 @@
 .list-unstyled li {
   padding-bottom: 15px;
   font-size: 20px;
-  
+
 }
 
-.asort li{
+.asort li {
   display: flex;
   align-items: center;
 }
@@ -293,7 +292,7 @@
   margin-top: 40px;
 }
 
-.recomend-card{
+.recomend-card {
   margin-top: 40px;
 }
 
@@ -341,10 +340,10 @@
   .naz-bl {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom : 20px !important;
+    margin-bottom: 20px !important;
   }
 
-  .cartinka{
+  .cartinka {
     margin-bottom: 25px;
     padding-left: 40px;
   }
@@ -630,11 +629,12 @@
   .footer-buttons a {
     padding: 0px 15px;
   }
-  .footer-section a{
+
+  .footer-section a {
     font-size: 16px;
   }
 
-  .footer-section a>img{
+  .footer-section a>img {
     margin: 0;
   }
 }

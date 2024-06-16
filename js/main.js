@@ -33,8 +33,8 @@ app.get("/menu", (req, res) => {
   });
 });
 
-
-
+// ------------------------------------------------------------------------------
+// Админка
 let dbAdmin;
 app.get("/admin", (req, res) => {
   const login = req.query.login;
