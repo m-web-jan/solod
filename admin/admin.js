@@ -1,12 +1,4 @@
-let columns = [
-  "ID",
-  "Наименование",
-  "Описание",
-  "Изображение",
-  "Категория",
-  "Вес/Объем",
-  "Цена",
-];
+let columns = ["ID", "Наименование", "Описание", "Изображение", "Категория", "Вес/Объем", "Цена"];
 const form = document.getElementsByTagName("form")[0];
 let login, password;
 
@@ -28,7 +20,7 @@ function getData(login, password) {
     })
     .then((data) => {
       loadAdminPanel(data);
-      localStorage.setItem("data", JSON.stringify(data)); // store as string
+      localStorage.setItem("data", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching data:", error.message);
@@ -150,7 +142,7 @@ document.querySelector(".modal-content").onsubmit = (event) => {
   weight = weightInput.value;
   let priceInput = document.querySelector("#price");
   price = priceInput.value;
-
+  addItem();
   loadEnvFile(event, fileInput);
 
   nameInput.value = "";
@@ -162,7 +154,7 @@ document.querySelector(".modal-content").onsubmit = (event) => {
 };
 
 function loadEnvFile(event, fileInput) {
-  event.preventDefault(); // Prevent page reload
+  event.preventDefault();
   const inputFile = fileInput.files[0];
   if (inputFile) {
     const formData = new FormData();
@@ -200,14 +192,9 @@ function sendData(formData) {
     },
     body: JSON.stringify(formData),
   })
-    .then((response) => response.json()) // parsing JSON
+    .then((response) => response.json())
     .then((data) => {
-      if (data.success) {
-        getData(login, password);
-        addItem(); // close modal after adding item
-      } else {
-        console.error("Error adding item:", data.message);
-      }
+      getData(login, password);
     })
     .catch((error) => {
       console.error("Error uploading file:", error);

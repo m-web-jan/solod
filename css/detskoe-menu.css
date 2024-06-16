@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #951919;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B51B1B;
+  border-radius: 50px;
+}
+
 /* шапка */
 .navbar-btn span {
   width: 30px;
@@ -21,6 +36,12 @@
 
 .telephone {
   display: flex;
+}
+
+.telephone a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
