@@ -29,6 +29,7 @@
 .container-fluid>img {
   width: 150px;
   margin: 0 auto;
+  padding: 16px 0;
 
 }
 
@@ -68,7 +69,7 @@
 }
 
 /* ------------------------------------------- */
-/* Меню */
+/* Бургер меню */
 
 .offcanvas-header {
   justify-content: center;
@@ -98,170 +99,153 @@
 }
 
 /* ------------------------------------------- */
-/* первый слайдер */
-
-.first-carousel {
-  padding: 0;
-  margin-bottom: 32px;
-
-}
-
-.first-carousel .carousel-item {
-  display: flex;
-  max-height: 800px;
-}
-
-.first-carousel .carousel-item img {
-  object-fit: cover;
-}
-
-.first-carousel .carousel-item h1 {
-  font-weight: 700;
-  font-size: 44px;
-}
-
-.first-carousel .carousel-item p {
-  font-size: 18px;
-
-
-}
-
-@media screen and (max-width: 1200px) {
-  .first-carousel .carousel-item h1 {
-    font-size: 32px;
-  }
-
-  .first-carousel .carousel-item p {
-    font-size: 14px;
-    width: 548px;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-
-  .first-carousel .carousel-item h1 {
-    font-size: 24px;
-  }
-
-  .first-carousel .carousel-item p {
-    font-size: 14px;
-    width: 300px;
-
-  }
-
-  .first-carousel .carousel-item img {
-    object-fit: cover;
-    height: 300px;
-
-  }
-
-}
-
-/* ------------------------------------------------- */
-/* кнопки меню */
-.bnt-menu {
-  background-color: #B51B1B;
-  text-decoration: none;
-  color: #FFFFFF;
-  padding: 5px 20px;
-  font-size: 12px;
-  border-radius: 15px;
-  width: auto;
-
-}
-
-.content-menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.content-menu .active {
-  background-color: #000000;
-}
-
-
-@media screen and (max-width: 767px) {
-  .content-menu a {
-    margin: 0px 10px;
-  }
-
-  .content-menu {
-    max-width: 250px;
-    margin: 0 auto;
-
-  }
-}
-
-
-
-
-/* ------------------------------------------------- */
-/* Стили "карта еды") */
-.product-card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
-  transition: all .3s;
-  border-radius: 3%;
-  background-color: #E3E3E3;
-  margin-top: 40px;
-  
-
-}
-
-@media (hover: hover) {
-
-  .product-card:hover {
-    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
-    border-radius: 5%;
-  }
-}
-
-
-.product-photo img {
+/* Видео */
+.video-container{
   width: 100%;
-  height: 100%;
-  border-radius: 4%;
-  object-fit: cover;
-  padding: 20px 10px 20px 10px;
-}
-
-.product-details {
-  padding: 20px;
-}
-
-.product-details h4 {
-  font-weight: 500;
-  display: block;
-  max-height: 60px;
+  height: 500px;
+  position: relative;
   overflow: hidden;
-  color: #000000;
+}
+.banner video{
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: -150px;
+  left: 0;
+}
+.banner{
+  position: relative;
 }
 
-.product-details p {
-  margin-bottom: 20px;
-  height: 44px;
-  overflow: hidden;
-  color: #000000;
-
+.banner .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.content h1{
+  font-size: 100px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.content h2{
+  font-size: 100px;
+  color: #B51B1B;
+  font-weight: 700;
+  margin-top: -51px;
 }
 
-.product-ves {
+/* --------------------------------------------- */
+/* МЕНЮ */
+.shapka {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.shapka::after {
+  content: "";
+  width: 55%;
+  height: 2px;
+  background-color: #6B7153;
+  position: absolute;
+  left: 22.5%;
+  top: 110%;
+}
+
+.shapka h1 {
+  font-size: 96px;
+  font-weight: 400;
+  position: relative;
+}
+
+.shapka h1::after {
+  content: "";
+  width: 60%;
+  height: 5px;
+  background-color: #6B7153;
+  position: absolute;
+  left: 20%;
+  top: 100%;
+}
+
+/* Наливки настойки */
+.head-table{
+  margin-top: 50px;
+  border: 3px solid #6B7153;
+  width: 500px;
+  
+}
+
+.head-table h2{
+  background-color: #6B7153;
+  width: 497px;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 0;
+  
+}
+.name-product{
+  padding: 32px 24px;
+}
+.name-product p {
+display: flex;
+justify-content: space-between;
+font-size: 24px;
+}
+.name-product span{
+  font-size: 20px;
+}
+
+.nalivki-nast{
   display: flex;
   justify-content: space-between;
 }
-
-.product-bottom-details {
-  overflow: hidden;
-  padding-top: 10px;
+/* Наливки настойки */
+/* ------------------------------ */
+/* сеты */
+.sets-head{
+  margin-top: 50px;
 }
 
-.product-price {
-  font-size: 18px;
+.sets-head h2{
+  background-color: #6B7153;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.sets-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+}
+.sets-name>p{
+  font-size: 32px;
   font-weight: 600;
-  color: #000000;
 }
+
+.sets-description{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sets-weight{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.sets-price{
+  font-size: 28px;
+  font-weight: 600;
+}
+/* сеты */
+/* ------------------------------ */
+
 
 /* --------------------------------------------- */
 /* Подвал */
