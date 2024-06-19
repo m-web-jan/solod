@@ -232,6 +232,7 @@ font-size: 24px;
 .sets-description{
   font-size: 20px;
   font-weight: 300;
+  width: 700px;
 }
 
 .sets-weight{
@@ -245,6 +246,58 @@ font-size: 24px;
 }
 /* сеты */
 /* ------------------------------ */
+/* Пиво */
+.beer-head{
+  margin-top: 50px;
+}
+
+.beer-head h2{
+  background-color: #6B7153;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.category{
+  background-color: black;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 64px 0 20px 24px;
+  padding: 10px;
+  display: flex;
+  column-gap: 10px;
+  width: 260px;
+}
+
+.beer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px 0;
+}
+.beer-name>p{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.beer-description{
+  font-size: 18px;
+  font-weight: 300;
+  width: 700px;
+}
+
+.beer-weight{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.beer-price{
+  font-size: 28px;
+  font-weight: 600;
+}
+/* Пиво */
 
 
 /* --------------------------------------------- */
