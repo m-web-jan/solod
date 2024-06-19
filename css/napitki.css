@@ -100,36 +100,40 @@
 
 /* ------------------------------------------- */
 /* Видео */
-.video-container{
+.video-container {
   width: 100%;
   height: 500px;
   position: relative;
   overflow: hidden;
 }
-.banner video{
+
+.banner video {
   height: auto;
   width: 100%;
   position: absolute;
   top: -150px;
   left: 0;
 }
-.banner{
+
+.banner {
   position: relative;
 }
 
-.banner .content{
+.banner .content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.content h1{
+
+.content h1 {
   font-size: 100px;
   color: #FFFFFF;
   font-weight: 700;
 }
-.content h2{
+
+.content h2 {
   font-size: 100px;
   color: #B51B1B;
   font-weight: 700;
@@ -171,46 +175,51 @@
 }
 
 /* Наливки настойки */
-.head-table{
+.head-table {
   margin-top: 50px;
   border: 3px solid #6B7153;
   width: 500px;
-  
+
 }
 
-.head-table h2{
+.head-table h2 {
   background-color: #6B7153;
   width: 497px;
   font-size: 48px;
   color: #FFFFFF;
   text-align: center;
   padding: 15px 0;
-  
+
 }
-.name-product{
+
+.name-product {
   padding: 32px 24px;
 }
+
 .name-product p {
-display: flex;
-justify-content: space-between;
-font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
 }
-.name-product span{
+
+.name-product span {
   font-size: 20px;
 }
 
-.nalivki-nast{
+.nalivki-nast {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
+
 /* Наливки настойки */
 /* ------------------------------ */
 /* сеты */
-.sets-head{
+.sets-head {
   margin-top: 50px;
 }
 
-.sets-head h2{
+.sets-head h2 {
   background-color: #6B7153;
   font-size: 48px;
   color: #FFFFFF;
@@ -218,40 +227,43 @@ font-size: 24px;
   padding: 15px 0;
 }
 
-.sets-content{
+.sets-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px 24px;
 }
-.sets-name>p{
+
+.sets-name>p {
   font-size: 32px;
   font-weight: 600;
 }
 
-.sets-description{
+.sets-description {
   font-size: 20px;
   font-weight: 300;
   width: 700px;
 }
 
-.sets-weight{
+.sets-weight {
   font-size: 28px;
   font-weight: 600;
 }
 
-.sets-price{
+.sets-price {
   font-size: 28px;
   font-weight: 600;
 }
+
 /* сеты */
 /* ------------------------------ */
 /* Пиво */
-.beer-head{
+.beer-head {
   margin-top: 50px;
+  border: 3px solid #6B7153;
 }
 
-.beer-head h2{
+.beer-head h2 {
   background-color: #6B7153;
   font-size: 48px;
   color: #FFFFFF;
@@ -259,7 +271,7 @@ font-size: 24px;
   padding: 15px 0;
 }
 
-.category{
+.category {
   background-color: black;
   color: #FFFFFF;
   font-size: 32px;
@@ -271,33 +283,102 @@ font-size: 24px;
   width: 260px;
 }
 
-.beer-content{
+.beer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px 24px 0;
 }
-.beer-name>p{
+
+.beer-name>p {
   font-size: 24px;
   font-weight: 600;
 }
 
-.beer-description{
+
+.beer-description {
   font-size: 18px;
   font-weight: 300;
   width: 700px;
 }
 
-.beer-weight{
+.beer-weight {
   font-size: 28px;
   font-weight: 600;
 }
 
-.beer-price{
+.beer-price {
   font-size: 28px;
   font-weight: 600;
 }
+
 /* Пиво */
+
+/* ------------------------------ */
+/* Водка/коньяк */
+.alk {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.alk-head {
+  margin-top: 50px;
+  border: 3px solid #6B7153;
+  width: 600px;
+}
+
+.alk-head h2 {
+  background-color: #6B7153;
+  width: auto;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.category-alk {
+  background-color: black;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 32px 0 20px 24px;
+  padding: 10px;
+  display: flex;
+  column-gap: 10px;
+  width: 260px;
+}
+
+.alk-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 0;
+}
+
+.alk-name>p {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  width: 350px;
+}
+
+.alk-description {
+  font-size: 18px;
+  font-weight: 350;
+}
+
+.alk-weight {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.alk-price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Водка/коньяк */
 
 
 /* --------------------------------------------- */
