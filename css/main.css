@@ -12,17 +12,6 @@
   background-color: #B51B1B;
   border-radius: 50px;
 }
-@media screen and (max-width: 390px) {
-  body {
-    background-color: red;
-  }
-}
-@media screen and (max-width: 360px) {
-  body {
-    background-color: blue;
-  }
-}
-
 
 
 /* шапка */
