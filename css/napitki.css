@@ -150,11 +150,11 @@
 
 .shapka::after {
   content: "";
-  width: 55%;
+  width: 22%;
   height: 2px;
   background-color: #6B7153;
   position: absolute;
-  left: 22.5%;
+  left: calc(78% / 2);
   top: 110%;
 }
 
@@ -166,11 +166,11 @@
 
 .shapka h1::after {
   content: "";
-  width: 60%;
+  width: 27%;
   height: 5px;
   background-color: #6B7153;
   position: absolute;
-  left: 20%;
+  left: calc(73% / 2);
   top: 100%;
 }
 
@@ -178,7 +178,7 @@
 .napitki-head {
   margin-top: 50px;
   border: 3px solid #6B7153;
-  width: 400px;
+  max-width: 400px;
 }
 
 .napitki-head h2 {
@@ -190,23 +190,43 @@
   padding: 15px 0;
 }
 .napitki-name{
-  width: 150PX;
+  max-width: 150PX;
 }
 
 .napitki-name>p{
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 600;
   margin: 0;
 }
+
+ .napitki-description {
+   font-size: 18px;
+   font-weight: 350;
+ }
+ 
+ .napitki-weight {
+   font-size: 16px;
+   font-weight: 700;
+   
+ }
+ 
+ .napitki-price {
+   font-size: 16px;
+   font-weight: 700;
+   
+ 
+ }
 /* чай кофе */
 .coffe-tea{
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
+  
 }
 .tea-head {
   margin-top: 50px;
   border: 3px solid #6B7153;
-  width: 850px;
+  max-width: 850px;
 }
 
 .tea-head h2 {
@@ -217,7 +237,11 @@
   text-align: center;
   padding: 15px 0;
 }
-
+.category-tea img{
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
 .category-tea {
   background-color: black;
   color: #FFFFFF;
@@ -227,21 +251,27 @@
   padding: 10px;
   display: flex;
   column-gap: 10px;
-  width: 270px;
+  max-width: 305px;
   
 }
 
 .tea-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  padding: 20px 24px 0;
+  align-items: self-start;
+  gap: 10px;
+  padding: 20px 24px 0 24px;
+  width: 350px;
+  height: 70px;
+
 }
 
+.tea-name{
+ width: 150px;
+}
 
 .tea-name>p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
 }
@@ -254,11 +284,14 @@
 .tea-weight {
   font-size: 16px;
   font-weight: 700;
+  
 }
 
 .tea-price {
   font-size: 16px;
   font-weight: 700;
+  
+
 }
 
 
@@ -269,7 +302,7 @@
 .head-table {
   margin-top: 50px;
   border: 3px solid #6B7153;
-  width: 500px;
+  max-width: 500px;
 
 }
 
@@ -333,7 +366,7 @@
 .sets-description {
   font-size: 20px;
   font-weight: 300;
-  width: 700px;
+  max-width: 700px;
 }
 
 .sets-weight {
@@ -371,7 +404,7 @@
   padding: 10px;
   display: flex;
   column-gap: 10px;
-  width: 260px;
+  max-width: 260px;
 }
 
 .beer-content {
@@ -401,6 +434,7 @@
 .beer-price {
   font-size: 28px;
   font-weight: 600;
+  width: 150px;
 }
 
 /* Пиво */
@@ -471,6 +505,36 @@
 
 /* Водка/коньяк */
 
+@media screen and (max-width: 767px){
+  /* Видео */
+
+  
+  /* --------------------------------------- */
+  /* напитки */
+
+  .shapka h1{
+    font-size: 36px;
+  }
+
+  .alk{
+    flex-direction: column;
+  }
+
+  .coffe-tea{
+    flex-direction: column;
+  }
+  
+
+  /* --------------------------------------- */
+  /* алкоголь */
+  .nalivki-nast{
+    flex-direction: column;
+  }
+
+  .head-table{
+    
+  }
+}
 
 /* --------------------------------------------- */
 /* Подвал */
