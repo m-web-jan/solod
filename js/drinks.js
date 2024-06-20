@@ -1,26 +1,26 @@
 import { ageVerificationPopup } from "./ageVerificationPopup.js";
-import { displayCards, sendRequest } from "./controller.js";
+// import { displayCards, sendRequest } from "./controller.js";
 
-function loadCard() {
-  fetch(`http://localhost:3000/menu?categoryId=Напитки`)
-    .then((response) => response.json())
-    .then((data) => {
-      displayCards(data);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-}
-loadCard();
+// function loadCard() {
+//   fetch(`http://localhost:3000/menu?categoryId=Напитки`)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       displayCards(data);
+//     })
+//     .catch((error) => console.error("Error fetching data:", error));
+// }
+// loadCard();
 
-let categoryBtns = document.getElementsByClassName("bnt-menu");
-for (let i = 0; i < categoryBtns.length; i++) {
-  categoryBtns[i].onclick = () => {
-    for (let i = 0; i < categoryBtns.length; i++) {
-      categoryBtns[i].classList.remove("active");
-    }
-    categoryBtns[i].classList.add("active");
+// let categoryBtns = document.getElementsByClassName("bnt-menu");
+// for (let i = 0; i < categoryBtns.length; i++) {
+//   categoryBtns[i].onclick = () => {
+//     for (let i = 0; i < categoryBtns.length; i++) {
+//       categoryBtns[i].classList.remove("active");
+//     }
+//     categoryBtns[i].classList.add("active");
 
-    sendRequest(categoryBtns[i].id);
-  };
-}
+//     sendRequest(categoryBtns[i].id);
+//   };
+// }
 
 ageVerificationPopup();
