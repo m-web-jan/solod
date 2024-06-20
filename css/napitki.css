@@ -195,14 +195,14 @@
 }
 
 .napitki-name>p {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
 }
 
 .napitki-description {
   font-size: 16px;
-  font-weight: 350;
+  font-weight: 300;
 }
 
 .napitki-weight {
@@ -241,13 +241,13 @@
   padding: 15px 0;
 }
 
-.category-tea img {
+.category img {
   width: 30px;
   height: 30px;
   align-self: center;
 }
 
-.category-tea {
+.category {
   background-color: black;
   color: #FFFFFF;
   font-size: 32px;
@@ -256,7 +256,7 @@
   padding: 10px;
   display: flex;
   column-gap: 10px;
-  max-width: 305px;
+  width: 305px;
 
 }
 
@@ -299,15 +299,12 @@
 
 }
 
-
-
-
-/* Напитки */
+/* ---------------------------------- */
 /* Наливки настойки */
 .head-table {
   margin-top: 50px;
   border: 3px solid #6B7153;
-  max-width: 500px;
+  width: 500px;
 
 }
 
@@ -341,7 +338,6 @@
   align-items: flex-start;
 }
 
-/* Наливки настойки */
 /* ------------------------------ */
 /* сеты */
 .sets-head {
@@ -384,7 +380,6 @@
   font-weight: 600;
 }
 
-/* сеты */
 /* ------------------------------ */
 /* Пиво */
 .beer-head {
@@ -398,18 +393,6 @@
   color: #FFFFFF;
   text-align: center;
   padding: 15px 0;
-}
-
-.category {
-  background-color: black;
-  color: #FFFFFF;
-  font-size: 32px;
-  font-weight: 600;
-  margin: 64px 0 20px 24px;
-  padding: 10px;
-  display: flex;
-  column-gap: 10px;
-  max-width: 260px;
 }
 
 .beer-content {
@@ -442,8 +425,6 @@
   width: 150px;
 }
 
-/* Пиво */
-
 /* ------------------------------ */
 /* Водка/коньяк */
 .alk {
@@ -465,18 +446,6 @@
   color: #FFFFFF;
   text-align: center;
   padding: 15px 0;
-}
-
-.category-alk {
-  background-color: black;
-  color: #FFFFFF;
-  font-size: 32px;
-  font-weight: 600;
-  margin: 32px 0 20px 24px;
-  padding: 10px;
-  display: flex;
-  column-gap: 10px;
-  width: 260px;
 }
 
 .alk-content {
@@ -509,47 +478,175 @@
   font-weight: 700;
 }
 
-/* Водка/коньяк */
-
+/* --------------------------------- */
+/* Мобильная версия */
 @media screen and (max-width: 767px) {
-  /* Видео */
 
+  /* Видео */
+  .video-container {
+    height: 200px;
+  }
+
+  .banner .content {
+    top: 30%;
+  }
+
+  .banner video {
+    top: 60px;
+    transform: scale(2);
+  }
+
+  .content img {
+    width: 100px;
+  }
+
+  .content h1 {
+    font-size: 20px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
 
   /* --------------------------------------- */
+  .shapka::after {
+    width: 60%;
+    left: calc(40% / 2);
+    top: 125%;
+  }
+
+  .shapka h1 {
+    font-size: 96px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .shapka h1::after {
+    width: 70%;
+    left: calc(30% / 2);
+    top: 100%;
+  }
+
+  /* ------------------------------------ */
   /* напитки */
 
   .shapka h1 {
     font-size: 36px;
   }
 
+  /* напитки------------------------- */
   .napitki-head {
     width: 100%;
   }
-  .napitki-head h2{
+
+  .napitki-head h2 {
     width: 100%;
+    font-size: 24px;
   }
-  .alk {
-    flex-direction: column;
+
+  .napitki-weight {
+    font-weight: 600;
   }
-  .tea-head {
-    width: 100%;
+
+  .napitki-price {
+    font-weight: 600;
   }
-  .tea-content{
-    width: 100%;
-  }
+
+
+  /* Чай-Кофе------------------------- */
   .coffe-tea {
     flex-direction: column;
   }
 
+  .tea-head {
+    width: 100%;
+  }
+
+  .tea-head h2 {
+    font-size: 24px;
+  }
+
+  .tea-name>p {
+    font-weight: 700;
+  }
+
+  .tea-weight {
+    font-weight: 600;
+  }
+
+  .tea-price {
+    font-weight: 600;
+  }
+
+  .tea-content {
+    width: 100%;
+    padding: 10px 12px 0;
+    gap: 2px;
+  }
+
+  .category {
+    margin: 32px 0 10px;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  .category img {
+    width: 20px;
+    height: 20px;
+  }
 
   /* --------------------------------------- */
   /* алкоголь */
+
+  /* Наливки-настойки---------------------------- */
   .nalivki-nast {
     flex-direction: column;
   }
 
-  .head-table{
+  .name-product {
+    padding: 16px 12px 0;
+  }
+
+  .head-table {
     width: 100%;
+  }
+
+  .head-table h2 {
+    font-size: 24px;
+  }
+
+  /* сеты-------------------------------------- */
+  .sets-head h2 {
+    font-size: 24px;
+  }
+
+  .sets-content {
+    padding: 16px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sets-name>p {
+    font-size: 18px;
+  }
+
+  .sets-description {
+    font-size: 16px;
+  }
+
+  .sets-weight {
+    font-size: 16px;
+  }
+
+  .sets-price {
+    font-size: 16px;
+  }
+
+  /* Пиво -------------------------------------------- */
+  .beer-head h2 {
+    font-size: 24px;
   }
 
   .beer-content {
@@ -582,25 +679,50 @@
     width: 70px;
   }
 
+  .category {
+    margin: 32px 0 10px;
+  }
+
+  /* Водка-коньяк-вино-------------------------------- */
+  .alk {
+    flex-direction: column;
+  }
+
+  .alk-content {
+    padding: 16px 12px 0;
+    gap: 2px;
+    align-items: flex-start;
+  }
+
+  .alk-head {
+    width: 100%;
+  }
+
+  .alk-head h2 {
+    font-size: 24px;
+  }
+
   .alk-name>p {
     font-size: 18px;
     width: 150px;
   }
-  .alk-description{
+
+  .alk-description {
     width: 150px;
     font-size: 16px;
   }
-  .alk-weight{
+
+  .alk-weight {
     font-size: 16px;
-  }
-  .alk-price{
-    font-size: 16px;
+    font-weight: 600;
   }
 
-  .alk-head{
-    width: 100%;
+  .alk-price {
+    font-size: 16px;
+    font-weight: 600;
   }
-  
+
+
 }
 
 /* --------------------------------------------- */
@@ -756,9 +878,9 @@
 
 /* popup */
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 .popup-back {
   z-index: 10;
