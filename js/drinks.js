@@ -1,3 +1,4 @@
+import { ageVerificationPopup } from "./ageVerificationPopup.js";
 import { displayCards, sendRequest } from "./controller.js";
 
 function loadCard() {
@@ -21,3 +22,5 @@ for (let i = 0; i < categoryBtns.length; i++) {
     sendRequest(categoryBtns[i].id);
   };
 }
+
+ageVerificationPopup();
