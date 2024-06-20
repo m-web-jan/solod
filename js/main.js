@@ -9,13 +9,13 @@
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
 
-// // Настройка подключения к базе данных
-// const db = mysql.createConnection({
-//   host: "MySQL-8.2",
-//   user: "root",
-//   database: "solod",
-//   password: "",
-// });
+// Настройка подключения к базе данных
+const db = mysql.createConnection({
+  host: "MySQL-8.2",
+  user: "root",
+  database: "solod",
+  password: "",
+});
 
 // db.connect((err) => {
 //   if (err) {
@@ -33,18 +33,18 @@
 //   });
 // });
 
-// // ------------------------------------------------------------------------------
-// // Админка
-// let dbAdmin;
-// app.get("/admin", (req, res) => {
-//   const login = req.query.login;
-//   const password = req.query.password;
-//   dbAdmin = mysql.createConnection({
-//     host: "MySQL-8.2",
-//     user: login,
-//     database: "solod",
-//     password: password,
-//   });
+// ------------------------------------------------------------------------------
+// Админка
+let dbAdmin;
+app.get("/admin", (req, res) => {
+  const login = req.query.login;
+  const password = req.query.password;
+  dbAdmin = mysql.createConnection({
+    host: "MySQL-8.2",
+    user: login,
+    database: "solod",
+    password: password,
+  });
 
 //   dbAdmin.connect((err) => {
 //     if (err) {
