@@ -218,7 +218,7 @@
   height: 80%;
   border-radius: 4%;
   object-fit: cover;
-  padding: 20px ;
+  padding: 20px;
 }
 
 .product-details {
@@ -302,6 +302,10 @@
   position: relative;
 }
 
+.footer-section:nth-child(2) {
+  align-self: center;
+}
+
 .footer-section {
   min-width: 200px;
   font-weight: 500;
@@ -315,7 +319,6 @@
 
 .footer-section img {
   width: 245px;
-  height: 154px;
 }
 
 .footer-bottom {
@@ -412,5 +415,9 @@
 
   .footer-section a>img {
     margin: 0;
+  }
+
+  .footer-section img {
+    margin: 16px 0;
   }
 }

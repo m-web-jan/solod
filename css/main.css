@@ -538,7 +538,6 @@
 
 .footer-section img {
   width: 245px;
-  height: 154px;
 }
 
 .footer-bottom {
@@ -551,6 +550,10 @@
   margin-top: 20px;
   z-index: 1;
   position: relative;
+}
+
+.footer-section:nth-child(2){
+  align-self: center;
 }
 
 .footer-buttons {
@@ -635,5 +638,8 @@
 
   .footer-section a>img {
     margin: 0;
+  }
+  .footer-section img{
+    margin: 16px 0 ;
   }
 }
