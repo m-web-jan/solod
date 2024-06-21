@@ -57,29 +57,16 @@
       </div>
     </nav>
 
-    <!-- Слайдер -->
-    <div class="container-fluid first-carousel">
-      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/slad 1.1.png" class="d-block w-100" alt="1" />
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-light tt">
-              <h1>Меню</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slad 1.2.png" class="d-block w-100" alt="..." />
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-light">
-              <h1>Меню</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/slad 1.3.png" class="d-block w-100" alt="..." />
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-light">
-              <h1>Меню</h1>
-            </div>
-          </div>
-        </div>
+    <!-- Видео -->
+    <div class="banner">
+      <div class="video-container">
+        <video src="img/menuBackground.mp4" autoplay="" loop="" muted=""></video>
+      </div>
+
+      <div class="content">
+        <img src="img/napitki.png" alt="" />
+        <h1>Кафе-бар</h1>
+        <h2>Solod</h2>
       </div>
     </div>
 
@@ -93,10 +80,57 @@
       </div>
     </div>
 
-    <!-- карточки с блюдами -->
+    <!-- еда -->
+
     <section class="main-content">
-      <div class="container">
-        <div class="row">
+      <div class="card-eda">
+        <img src="/cardsImg/Драники с поджаркой.png" alt="" />
+        <div class="content">
+          <div class="card-name">Драники с поджаркой</div>
+          <div class="card-footer">
+            <div class="card-weight">
+              <p>Вес:</p>
+              <p>300 г.</p>
+            </div>
+            <div class="card-price">
+              <p>Цена:</p>
+              <p>15Р<small>50К</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-eda">
+        <img src="/cardsImg/Драники с поджаркой.png" alt="" />
+        <div class="content">
+          <div class="card-name">Драники с поджаркой</div>
+          <div class="card-footer">
+            <div class="card-weight">
+              <p>Вес:</p>
+              <p>300 г.</p>
+            </div>
+            <div class="card-price">
+              <p>Цена:</p>
+              <p>15Р<small>50К</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-eda">
+        <img src="/cardsImg/Драники с поджаркой.png" alt="" />
+        <div class="content">
+          <div class="card-name">Драники с поджаркой</div>
+          <div class="card-footer">
+            <div class="card-weight">
+              <p>Вес:</p>
+              <p>300 г.</p>
+            </div>
+            <div class="card-price">
+              <p>Цена:</p>
+              <p>15Р<small>50К</small></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -108,9 +142,13 @@
       <div class="footer-content">
         <div class="footer-section">
           <h2>Адрес и контакты</h2>
-          <a target="_blank" href="https://www.google.com/maps/place/%D0%9A%D0%B0%D1%84%D0%B5-%D0%B1%D0%B0%D1%80+%D0%A1%D0%BE%D0%BB%D0%BE%D0%B4/@52.125273,23.655015,18z/data=!4m6!3m5!1s0x4721099ca57bf177:0xcb3ce4751d8b3ec2!8m2!3d52.1252928!4d23.6562332!16s%2Fg%2F11g8vpw7wq?hl=ru&entry=ttu"><img src="img/Maps.png" alt="">Г. Брест, ул. Дубровская 7/а</a>
-          <a target="_blank" href="https://www.instagram.com/solod.brest/"><img src="img/Instagramfooter.png" alt="">solod.brest</a>
-          <a href="tel:8 (029) 658-50-92"><img src="img/telephone.png" alt="">8 (029) 658-50-92</a>
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/%D0%9A%D0%B0%D1%84%D0%B5-%D0%B1%D0%B0%D1%80+%D0%A1%D0%BE%D0%BB%D0%BE%D0%B4/@52.125273,23.655015,18z/data=!4m6!3m5!1s0x4721099ca57bf177:0xcb3ce4751d8b3ec2!8m2!3d52.1252928!4d23.6562332!16s%2Fg%2F11g8vpw7wq?hl=ru&entry=ttu"
+            ><img src="img/Maps.png" alt="" />Г. Брест, ул. Дубровская 7/а</a
+          >
+          <a target="_blank" href="https://www.instagram.com/solod.brest/"><img src="img/Instagramfooter.png" alt="" />solod.brest</a>
+          <a href="tel:8 (029) 658-50-92"><img src="img/telephone.png" alt="" />8 (029) 658-50-92</a>
         </div>
         <div class="footer-section">
           <img src="img/logo 2.png" alt="Логотип" />
@@ -132,7 +170,7 @@
         <p class="coperaid">© Веб-студия ЗАЧ, 2024</p>
       </div>
     </div>
-    
+
     <script type="module" src="/js/menu.js"></script>
 
     <!-- Подключение boostrap js и popper -->
