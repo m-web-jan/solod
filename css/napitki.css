@@ -488,7 +488,7 @@
   }
 
   .banner .content {
-    top: 30%;
+    top: 50%;
   }
 
   .banner video {
@@ -501,11 +501,12 @@
   }
 
   .content h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .content h2 {
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: -21px;
   }
 
   /* --------------------------------------- */
@@ -545,11 +546,11 @@
   }
 
   .napitki-weight {
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .napitki-price {
-    font-weight: 600;
+    font-weight: 400;
   }
 
 
@@ -567,15 +568,15 @@
   }
 
   .tea-name>p {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .tea-weight {
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .tea-price {
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .tea-content {
@@ -609,6 +610,16 @@
     padding: 16px 12px 0;
   }
 
+  .name-product p{
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .name-product span{
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   .head-table {
     width: 100%;
   }
@@ -638,10 +649,12 @@
 
   .sets-weight {
     font-size: 16px;
+    font-weight: 500;
   }
 
   .sets-price {
     font-size: 16px;
+    font-weight: 500;
   }
 
   /* Пиво -------------------------------------------- */
@@ -672,11 +685,13 @@
 
   .beer-weight {
     font-size: 14px;
+    font-weight: 400;
   }
 
   .beer-price {
     font-size: 14px;
     width: 70px;
+    font-weight: 400;
   }
 
   .category {
@@ -714,12 +729,12 @@
 
   .alk-weight {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .alk-price {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
 
