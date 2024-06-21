@@ -610,12 +610,12 @@
     padding: 16px 12px 0;
   }
 
-  .name-product p{
+  .name-product p {
     font-weight: 600;
     font-size: 18px;
   }
 
-  .name-product span{
+  .name-product span {
     font-weight: 400;
     font-size: 16px;
   }
@@ -777,7 +777,7 @@
   position: relative;
 }
 
-.footer-section:nth-child(2){
+.footer-section:nth-child(2) {
   align-self: center;
 }
 
@@ -794,6 +794,7 @@
 
 .footer-section img {
   width: 245px;
+
 }
 
 .footer-bottom {
@@ -891,11 +892,12 @@
   .footer-section a>img {
     margin: 0;
   }
+
+  .footer-section img {
+    margin: 16px 0;
+  }
 }
 
-.footer-section img{
-  margin: 16px 0 ;
-}
 
 
 /* popup */
