@@ -23,4 +23,4 @@ import { ageVerificationPopup } from "./ageVerificationPopup.js";
 //   };
 // }
 
-// ageVerificationPopup();
+ageVerificationPopup();

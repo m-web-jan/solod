@@ -140,6 +140,8 @@
   margin-top: -51px;
 }
 
+
+
 /* --------------------------------------------- */
 /* МЕНЮ */
 .shapka {
@@ -902,9 +904,9 @@
 
 /* popup */
 
-/* body {
+body {
   overflow: hidden;
-} */
+}
 
 .popup-back {
   z-index: 10;

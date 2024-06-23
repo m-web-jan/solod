@@ -138,7 +138,55 @@
   font-weight: 700;
   margin-top: -51px;
 }
+@media screen and (max-width: 767px) {
 
+  /* Видео */
+  .video-container {
+    height: 200px;
+  }
+
+  .banner .content {
+    top: 50%;
+  }
+
+  .banner video {
+    top: 60px;
+    transform: scale(2);
+  }
+
+  .content img {
+    width: 100px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content h2 {
+    font-size: 30px;
+    margin-top: -21px;
+  }
+
+  /* --------------------------------------- */
+  .shapka::after {
+    width: 60%;
+    left: calc(40% / 2);
+    top: 125%;
+  }
+
+  .shapka h1 {
+    font-size: 96px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .shapka h1::after {
+    width: 70%;
+    left: calc(30% / 2);
+    top: 100%;
+  }
+}
+  /* ------------------------------------ */
 
 /* ------------------------------------------- */
 /* кнопки меню */
@@ -186,9 +234,8 @@
 .main-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Центрирование карточек */
-  gap: 20px; /* Промежуток между карточками */
-  max-width: 1000px; /* Максимальная ширина контейнера */
+  justify-content: space-between;
+  max-width: 1000px;
   margin: 0 auto; 
 }
 
@@ -234,9 +281,9 @@
 }
 
 .card-name {
-  font-size: 1.2em;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
+  height: 70px;
 }
 
 .card-footer {
@@ -247,7 +294,9 @@
 
 .card-weight, .card-price {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+  
 }
 
 .card-price p {
@@ -258,6 +307,23 @@
   font-size: 0.8em;
 }
 
+/* Мобильная версия */
+
+@media screen and (max-width: 767px){
+
+  .card-eda{
+    width: 100%;
+  }
+}
+
+.main-content{
+  gap: 0;
+}
+
+.card-eda .img{
+  width: 100px;
+  height: 100px;
+}
 
 /* --------------------------------------------- */
 /* Подвал */
