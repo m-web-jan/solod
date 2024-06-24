@@ -138,6 +138,7 @@
   font-weight: 700;
   margin-top: -51px;
 }
+
 @media screen and (max-width: 767px) {
 
   /* Видео */
@@ -166,27 +167,8 @@
     font-size: 30px;
     margin-top: -21px;
   }
-
-  /* --------------------------------------- */
-  .shapka::after {
-    width: 60%;
-    left: calc(40% / 2);
-    top: 125%;
-  }
-
-  .shapka h1 {
-    font-size: 96px;
-    font-weight: 400;
-    position: relative;
-  }
-
-  .shapka h1::after {
-    width: 70%;
-    left: calc(30% / 2);
-    top: 100%;
-  }
 }
-  /* ------------------------------------ */
+
 
 /* ------------------------------------------- */
 /* кнопки меню */
@@ -224,7 +206,7 @@
 
   .content-menu {
     max-width: 250px;
-    margin: 0 auto;
+    margin: 20px auto 10px;
 
   }
 }
@@ -236,27 +218,28 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: 20px auto;
+  padding: 0 16px;
 }
+
+
 
 
 .card-eda:hover img {
   transform: scale(1.2);
   transition: .3s;
 }
-.card-eda:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
+
 .card-eda {
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
   padding: 10px;
-  width: calc(50% - 10px); /* Две карточки в ряд с учетом промежутка */
+  width: calc(50% - 10px);
+  /* Две карточки в ряд с учетом промежутка */
   margin: 10px 0;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-eda .img {
@@ -292,35 +275,44 @@
   width: 100%;
 }
 
-.card-weight, .card-price {
+.card-weight,
+.card-price {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  
+
 }
 
 .card-price p {
-  white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+  white-space: nowrap;
+  /* Предотвращает перенос текста на новую строку */
 }
 
 .card-price small {
   font-size: 0.8em;
 }
 
+@media (hover: hover) {
+  .card-eda:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+}
+
 /* Мобильная версия */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
-  .card-eda{
+  .card-eda {
     width: 100%;
   }
 }
 
-.main-content{
+.main-content {
   gap: 0;
 }
 
-.card-eda .img{
+.card-eda .img {
   width: 100px;
   height: 100px;
 }
