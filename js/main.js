@@ -1,13 +1,13 @@
-// const express = require("express");
-// const mysql = require("mysql2"); 
-// const cors = require("cors");
-// const multer = require ("multer");
-// const bodyParser = require ("body-parser");
-// const app = express();
-// const port = 3000;
-// app.use(cors());
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
+const express = require("express");
+const mysql = require("mysql2"); 
+const cors = require("cors");
+const multer = require ("multer");
+const bodyParser = require ("body-parser");
+const app = express();
+const port = 3000;
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Настройка подключения к базе данных
 const db = mysql.createConnection({
@@ -17,21 +17,22 @@ const db = mysql.createConnection({
   password: "",
 });
 
-// db.connect((err) => {
-//   if (err) {
-//     throw err;
-//   }
-//   console.log("Connected to database");
-// });
+db.connect((err) => {
+  if (err) {
+    throw err;
+  }
+  console.log("Connected to database");
+});
 
-// app.get("/menu", (req, res) => {
-//   const categoryId = req.query.categoryId;
-//   const sql = `SELECT * FROM menu where category = "${categoryId}"`;
-//   db.query(sql, (err, result) => {
-//     if (err) throw err;
-//     res.json(result); // Отправляем данные клиенту в формате JSON
-//   });
-// });
+app.get("/menu", (req, res) => {
+  const categoryId = req.query.categoryId;
+  const sql = `SELECT * FROM menu where category = "${categoryId}"`;
+  // const sql = `SELECT * FROM menu where category = Горячее`;
+  db.query(sql, (err, result) => {
+    if (err) throw err;
+    res.json(result);
+  });
+});
 
 // ------------------------------------------------------------------------------
 // Админка
@@ -92,6 +93,6 @@ const db = mysql.createConnection({
 //   });
 // });
 
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
