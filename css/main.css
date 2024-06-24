@@ -292,7 +292,7 @@
 }
 
 .recomend-card {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .cartinka img {
@@ -358,6 +358,7 @@
   justify-content: center;
   display: grid;
   font-size: 36px;
+  font-weight: 700;
 
 
 }
