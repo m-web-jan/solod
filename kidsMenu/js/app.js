@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Настройка подключения к базе данных
 const db = mysql.createConnection({
-  // host: "MySQL-8.2",
-  host: "localhost",
+  host: "MySQL-8.2",
+  // host: "localhost",
   user: "root",
   database: "solod",
   password: "",
