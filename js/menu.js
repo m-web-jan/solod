@@ -15,12 +15,12 @@ function displayProductCards(data) {
     cards.innerHTML = '';
     for (let i = 0; i < data.length; i++) {
         const rubels = Math.floor(data[i].price);
-        const kopeiki = (data[i].price - rubels) * 100;
+        const kopeiki = ((data[i].price - rubels) * 100).toFixed(0);
         const card = document.createElement('div');
         card.classList.add('card-eda');
         card.innerHTML = `
             <div class="img">
-          <img src="./img/${data[i].img_url}" alt="menuImg">
+          <img src="./cardsImg/${data[i].img_url}" alt="menuImg">
         </div>
         <div class="content">
           <div class="card-name">${data[i].name}</div>
