@@ -327,7 +327,7 @@
 .name-product p, .name-product1 p {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .name-product span, .name-product1 span {
@@ -458,6 +458,9 @@
   align-items: center;
   padding: 20px 24px 0;
   gap: 25px;
+}
+.alk-name{
+  width: 330px;
 }
 
 .alk-name>p {
@@ -719,7 +722,9 @@
   .alk-head h2 {
     font-size: 24px;
   }
-
+  .alk-name{
+    width: 150px;
+  }
   .alk-name>p {
     font-size: 18px;
     width: 150px;

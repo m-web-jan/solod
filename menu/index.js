@@ -35,7 +35,7 @@ function displayProductCards(data) {
             </div>
             <div class="card-price">
               <p>Цена:</p>
-              <p>${rubels}Р<small>${kopeiki}К</small></p>
+              <p>${rubels}Р<small> ${kopeiki}К</small></p>
             </div>
           </div>
         </div>
