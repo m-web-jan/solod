@@ -35,62 +35,70 @@ app.get("/menu", (req, res) => {
 
 // ------------------------------------------------------------------------------
 // Админка
+let dbAdmin;
+app.get("/admin", (req, res) => {
+  const login = req.query.login;
+  const password = req.query.password;
+  dbAdmin = mysql.createConnection({
+    user: login,
+    password: password,
+    host: "localhost",
+    database: "solod",
+  });
+  dbAdmin.connect((err) => {
+    if (err) {
+      return res.status(401).json({ error: "Неправильный логин или пароль" });
+    }
+    console.log("Connected to database");
+  });
 
+  const sql = `SELECT * FROM menu`;
+  dbAdmin.query(sql, (err, result) => {
+    if (err) {
+      return res.status(401).json({ error: "Ошибка выполнения запроса" });
+    }
+    res.json(result);
+  });
+});
 
-//   dbAdmin.connect((err) => {
-//     if (err) {
-//       return res.status(401).json({ error: "Неправильный логин или пароль" });
-//     }
-//     console.log("Connected to database");
-//   });
+app.get("/admin/delete", (req, res) => {
+  const id = req.query.id;
+  const sql = `DELETE FROM menu WHERE id = '${id}'`;
 
-//   const sql = `SELECT * FROM menu`;
-//   dbAdmin.query(sql, (err, result) => {
-//     if (err) {
-//       return res.status(401).json({ error: "Ошибка выполнения запроса" });
-//     }
-//     res.json(result);
-//   });
-// });
+  dbAdmin.query(sql, (err, result) => {
+    if (err) {
+      return res.status(401).json({ error: "Ошибка выполнения запроса" });
+    }
+    res.json(result);
+  });
+});
 
-// app.get("/admin/delete", (req, res) => {
-//   const id = req.query.id;
-//   const sql = `DELETE FROM menu WHERE id = '${id}'`;
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "cardsImg/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
+});
 
-//   dbAdmin.query(sql, (err, result) => {
-//     if (err) {
-//       return res.status(401).json({ error: "Ошибка выполнения запроса" });
-//     }
-//     res.json(result);
-//   });
-// });
+const upload = multer({ storage });
 
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "cardsImg/");
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, `${Date.now()}-${file.originalname}`);
-//   },
-// });
+app.post("/upload", upload.single("file"), (req, res) => {
+  res.json({ filename: req.file.filename });
+});
 
-// const upload = multer({ storage });
+app.post("/addItem", (req, res) => {
+  const { name, description, weight, price, category, fileName} = req.body;
+  const sql = `INSERT INTO menu ( name, description, weight, price, category, img_url) VALUES ('${name}','${description}','${weight}','${price}','${category}','${fileName}')`;
 
-// app.post("/upload", upload.single("file"), (req, res) => {
-//   res.json({ filename: req.file.filename });
-// });
-
-// app.post("/addItem", (req, res) => {
-//   const { name, description, weight, price, category, fileName} = req.body;
-//   const sql = `INSERT INTO menu ( name, description, weight, price, category, img_url) VALUES ('${name}','${description}','${weight}','${price}','${category}','${fileName}')`;
-
-//   dbAdmin.query(sql, (err, result) => {
-//     if (err) {
-//       return res.status(401).json({ error: "Ошибка выполнения запроса 123" });
-//     }
-//     res.json(result);
-//   });
-// });
+  dbAdmin.query(sql, (err, result) => {
+    if (err) {
+      return res.status(401).json({ error: "Ошибка выполнения запроса 123" });
+    }
+    res.json(result);
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
