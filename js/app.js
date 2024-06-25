@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Настройка подключения к базе данных
 const db = mysql.createConnection({
-  host: "MySQL-8.2",
+  // host: "MySQL-8.2",
+  host: "localhost",
   user: "root",
   database: "solod",
   password: "",
@@ -42,7 +43,8 @@ app.get("/admin", (req, res) => {
   dbAdmin = mysql.createConnection({
     user: login,
     password: password,
-    host: "MySQL-8.2",
+    // host: "MySQL-8.2",
+    host: "localhost",
     database: "solod",
   });
   dbAdmin.connect((err) => {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe bar-solod</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
 
     <!-- Подключение boostrap css -->
 
@@ -71,10 +72,15 @@
                 <a class="nav-link" href="./drinks/index.html">Напитки</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./kidsMenu/index.html">Детское меню</a>
+                <a class="nav-link" href="./kidsMenu/index.html"
+                  >Детское меню</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./contacts/index.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./contacts/index.html"
                   >Контакты</a
                 >
               </li>
@@ -353,8 +359,16 @@
       </div>
     </div>
 
-    <!-- Настойки -->
+    <section class="contactUs">
+      <div class="blur">
+        <div class="contactUs-body">
+          <h2>Хотите сделать резерв стола?</h2>
+          <div class="button">Оставить заявку</div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Настойки -->
     <div class="container">
       <h4 class="gl-text">Настойки и наливки собственого производства</h4>
       <div class="tinctures-block">
@@ -402,8 +416,8 @@
     <br />
     <br />
     <br />
-    <!-- Подвал -->
 
+    <!-- Подвал -->
     <div class="footer">
       <div class="footer-blur"></div>
       <div class="footer-content">
@@ -448,5 +462,17 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <div class="contactModal close">
+      <form class="contactModalBody">
+        <h2>Оставьте свой номер телефона и мы свяжемя с вами</h2>
+        <input type="text" placeholder="Имя" required />
+        <span class="nameError"></span>
+        <input type="tel" placeholder="Телефон" required />
+        <span class="teleError"></span>
+        <button type="submit" id="modalBtn" class="button">Отправить</button>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
