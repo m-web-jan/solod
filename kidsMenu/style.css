@@ -520,7 +520,6 @@
 
 .card-price p {
   white-space: nowrap;
-  /* Предотвращает перенос текста на новую строку */
 }
 
 .card-price small {

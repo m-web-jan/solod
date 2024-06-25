@@ -904,9 +904,9 @@
 
 /* popup */
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 
 .popup-back {
   z-index: 10;
@@ -1024,3 +1024,62 @@ body {
 }
 
 /* popup */
+
+
+/* Drink cards */
+
+.drinks {
+  max-width: 1300px;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  justify-content: center;
+}
+.category-block {
+  width: 600px;
+  border: 5px solid #6b7153;
+}
+.drinks > div > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #6b7153;
+  color: white;
+  font-size: 48px;
+  padding: 16px 0;
+}
+.drinkCard {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+.name {
+  width: 200px;
+}
+.name h2 {
+  font-size: 32px;
+}
+.name p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.volume {
+  font-size: 32px;
+  font-weight: 500;
+}
+.price {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .drinks {
+    max-width: calc(100% - 32px);
+  }
+  .volume, .price, .name h2 {
+    font-size: 24px;
+  }
+  .name p {
+    font-size: 16px;
+  }
+}

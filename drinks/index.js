@@ -1,26 +1,49 @@
 import { ageVerificationPopup } from "../js/ageVerificationPopup.js";
-// import { displayCards, sendRequest } from "./controller.js";
 
-// function loadCard() {
-//   fetch(`http://localhost:3000/menu?categoryId=Напитки`)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       displayCards(data);
-//     })
-//     .catch((error) => console.error("Error fetching data:", error));
-// }
-// loadCard();
+async function getData(category) {
+  fetch(`http://localhost:3000/menu?categoryId=${category}`)
+    .then((response) => response.json())
+    .then((data) => {
+      displayDrinks(data, category);
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}
 
-// let categoryBtns = document.getElementsByClassName("bnt-menu");
-// for (let i = 0; i < categoryBtns.length; i++) {
-//   categoryBtns[i].onclick = () => {
-//     for (let i = 0; i < categoryBtns.length; i++) {
-//       categoryBtns[i].classList.remove("active");
-//     }
-//     categoryBtns[i].classList.add("active");
+const categories = ['Чай', 'Кофе', 'Напитки', 'Наливки', 'Настойки', 'Сет', 'Разливное', 'Бутылочное', 'Водка', 'Коньяк', 'Вино', 'Игристое'];
 
-//     sendRequest(categoryBtns[i].id);
-//   };
-// }
+for (let i = 0; i < categories.length; i++) {
+  getData(categories[i]);
+}
 
-ageVerificationPopup();
+function displayDrinks(data, title) {
+  const cards = document.getElementsByClassName("drinks")[0];
+  const categoryBlock = document.createElement('div');
+  categoryBlock.classList.add('category-block');
+  categoryBlock.classList.add(title);
+  const categoryTitle = document.createElement('h2');
+  categoryTitle.innerText = title;
+  categoryBlock.appendChild(categoryTitle);
+
+  for (let i = 0; i < data.length; i++) {
+    const card = document.createElement("div");
+    const rubels = Math.floor(data[i].price);
+    const kopeiki = ((data[i].price - rubels) * 100).toFixed(0);
+    card.classList.add("drinkCard");
+    card.innerHTML = `
+    <div class="name">
+      <h2>${data[i].name}</h2>
+      <p>${data[i].description}</p>
+    </div>
+    <p class="volume">${data[i].weight} мл.</p>
+    <p class="price">${rubels}р ${kopeiki}к</p>
+    `;
+
+    categoryBlock.appendChild(card);
+  }
+  cards.appendChild(categoryBlock);
+}
+
+
+
+
+// ageVerificationPopup();
