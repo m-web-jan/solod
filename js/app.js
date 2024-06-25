@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql2"); 
+const mysql = require("mysql2");
 const cors = require("cors");
 const multer = require ("multer");
 const bodyParser = require ("body-parser");
@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Настройка подключения к базе данных
 const db = mysql.createConnection({
-  host: "MySQL-8.2",
+  // host: "MySQL-8.2",
+  host: "localhost",
   user: "root",
   database: "solod",
   password: "",
@@ -27,7 +28,6 @@ db.connect((err) => {
 app.get("/menu", (req, res) => {
   const categoryId = req.query.categoryId;
   const sql = `SELECT * FROM menu where category = "${categoryId}"`;
-  // const sql = `SELECT * FROM menu where category = Горячее`;
   db.query(sql, (err, result) => {
     if (err) throw err;
     res.json(result);

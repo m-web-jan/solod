@@ -9,7 +9,7 @@ export function ageVerificationPopup() {
           <h2>Если нет 18 лет, мы скажем тебе нет</h2>
           <p>Информация на сайте предназначена для покупателей старше 18 лет.<br>Вы подтверждаете, что ознакомлены с данной информацией и Вам больше 18?</p>
         </div>
-        <img src="./img/agePopupImg.png" alt="popupImg">
+        <img src="../img/agePopupImg.png" alt="popupImg">
       </div>
       <div class="btns">
         <button type='submit'>Да, мне есть 18 лет</button>

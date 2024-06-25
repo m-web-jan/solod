@@ -20,7 +20,7 @@ function displayProductCards(data) {
         card.classList.add('card-eda');
         card.innerHTML = `
             <div class="img">
-          <img src="./cardsImg/${data[i].img_url}" alt="menuImg">
+          <img src="../cardsImg/${data[i].img_url}" alt="menuImg">
         </div>
         <div class="content">
           <div class="card-name">${data[i].name}</div>

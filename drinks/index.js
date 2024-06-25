@@ -1,4 +1,4 @@
-import { ageVerificationPopup } from "./ageVerificationPopup.js";
+import { ageVerificationPopup } from "../js/ageVerificationPopup.js";
 // import { displayCards, sendRequest } from "./controller.js";
 
 // function loadCard() {
