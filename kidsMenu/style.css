@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #B51B1B;
+  background-color: #b51b1b;
   border-radius: 50px;
 }
 
@@ -26,13 +26,10 @@
   border: none;
 }
 
-.container-fluid>img {
+.container-fluid > img {
   width: 150px;
   margin: 0 auto;
-
 }
-
-
 
 .telephone {
   display: flex;
@@ -40,31 +37,27 @@
 
 .telephone a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-
   .telephone {
     display: none;
   }
 
   .navbar {
     flex-wrap: nowrap;
-
   }
 
-  .container-fluid>img {
+  .container-fluid > img {
     width: 90px;
     margin: 0 auto;
-
   }
 
   .navbar-btn {
     width: 10px;
   }
-
 }
 
 /* ------------------------------------------- */
@@ -74,7 +67,6 @@
 .offcanvas-header {
   justify-content: center;
   background-color: rgba(207, 11, 11, 0.74);
-
 }
 
 .offcanvas-header img {
@@ -105,7 +97,6 @@
 .first-carousel {
   padding: 0;
   margin-bottom: 30px;
-
 }
 
 .first-carousel .carousel-item {
@@ -124,8 +115,6 @@
 
 .first-carousel .carousel-item p {
   font-size: 18px;
-
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -136,12 +125,10 @@
   .first-carousel .carousel-item p {
     font-size: 14px;
     width: 548px;
-
   }
 }
 
 @media screen and (max-width: 767px) {
-
   .first-carousel .carousel-item h1 {
     font-size: 24px;
   }
@@ -149,30 +136,24 @@
   .first-carousel .carousel-item p {
     font-size: 14px;
     width: 300px;
-
   }
 
   .first-carousel .carousel-item img {
     object-fit: cover;
     height: 300px;
-
   }
-
 }
-
-
 
 /* кнопки меню */
 .bnt-menu {
-  background-color: #B51B1B;
+  background-color: #b51b1b;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 5px 20px;
   font-size: 12px;
   border-radius: 15px;
   width: auto;
   cursor: pointer;
-
 }
 
 .content-menu .active {
@@ -184,10 +165,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-
-
 }
-
 
 @media screen and (max-width: 767px) {
   .content-menu a {
@@ -197,20 +175,17 @@
   .content-menu {
     max-width: 250px;
     margin: 0 auto;
-
   }
 }
-
 
 /* ------------------------------------------------- */
 /* Стили "карта еды") */
 .product-card {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 3%;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   margin-top: 40px;
-
 }
 
 .product-photo img {
@@ -238,7 +213,6 @@
   height: 44px;
   overflow: hidden;
   color: #000000;
-
 }
 
 .product-ves {
@@ -258,7 +232,6 @@
 }
 
 @media (hover: hover) {
-
   .product-card:hover {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
     border-radius: 5%;
@@ -269,18 +242,15 @@
 /* Подвал */
 
 .footer {
-  background-image: url('../img/footer.png');
+  background-image: url("../img/footer.png");
   background-size: cover;
   color: white;
   padding: 20px 0;
   position: relative;
   margin-top: 50px;
-
-
 }
 
 .footer-blur {
-
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -338,7 +308,6 @@
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-
 }
 
 .footer-buttons a {
@@ -348,7 +317,6 @@
   border-radius: 5px;
   margin: 5px 0;
   font-weight: 500;
-
 }
 
 .coperaid {
@@ -357,7 +325,7 @@
 }
 
 .footer-section a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -367,7 +335,7 @@
   font-size: 18px;
 }
 
-.footer-section a>img {
+.footer-section a > img {
   width: 30px;
   height: 30px;
 }
@@ -399,10 +367,8 @@
     font-size: 16px;
     min-width: 200px;
     margin: 0 auto;
-
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .footer-buttons a {
@@ -413,11 +379,225 @@
     font-size: 16px;
   }
 
-  .footer-section a>img {
+  .footer-section a > img {
     margin: 0;
   }
 
   .footer-section img {
     margin: 16px 0;
+  }
+}
+
+/* Модалка */
+.close {
+  display: none;
+}
+.modal-back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 767px) {
+  .modal-body {
+    flex-direction: column;
+    max-width: 500px;
+    width: auto !important;
+    min-width: 300px;
+  }
+  .modal-body img {
+    width: auto;
+    margin: 16px auto;
+  }
+}
+.modal-body {
+  display: flex;
+  background-color: white;
+  border-radius: 32px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+}
+.modal-body img {
+  width: 50%;
+  object-fit: contain;
+}
+.modal-content {
+  padding: 24px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+}
+.price,
+.weight {
+  font-weight: bold;
+}
+
+/* еда */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.card-eda:hover img {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.card-eda {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: calc(50% - 10px);
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-eda .img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.card-eda .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s;
+}
+
+.content {
+  flex: 1;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: bold;
+  height: 70px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-weight,
+.card-price {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+@media screen and (max-width: 400px) {
+  .card-weight,
+  .card-price {
+    align-self: flex-end;
+  }
+  .card-footer {
+    flex-direction: column;
+  }
+}
+
+.card-price p {
+  white-space: nowrap;
+  /* Предотвращает перенос текста на новую строку */
+}
+
+.card-price small {
+  font-size: 0.8em;
+}
+
+@media (hover: hover) {
+  .card-eda:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+}
+
+/* Мобильная версия */
+
+@media screen and (max-width: 767px) {
+  .card-eda {
+    width: 100%;
+  }
+}
+
+.main-content {
+  gap: 0;
+}
+
+.card-eda .img {
+  width: 100px;
+  height: 100px;
+}
+
+.drinks {
+  max-width: 1000px;
+  margin: 2rem auto;
+  border: 5px solid #6b7153;
+}
+
+.drinks > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #6b7153;
+  color: white;
+  font-size: 48px;
+  padding: 16px 0;
+}
+
+.drinkCard {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+.name {
+  max-width: 200px;
+}
+.name h2 {
+  font-size: 32px;
+}
+.name p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.volume {
+  font-size: 32px;
+  font-weight: 500;
+}
+.price {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .drinks {
+    max-width: calc(100% - 32px);
+  }
+  .volume, .price, .name h2 {
+    font-size: 24px;
+  }
+  .name p {
+    font-size: 16px;
   }
 }

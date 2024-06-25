@@ -1,15 +1,20 @@
 getData("Еда");
+getData("НапиткиД");
 
-function getData(category) {
+async function getData(category) {
   fetch(`http://localhost:3000/menu?categoryId=${category}`)
     .then((response) => response.json())
     .then((data) => {
-      displayProductCards(data);
+      if (category === "Еда") {
+        displayFood(data);
+      } else {
+        displayDrinks(data);
+      }
     })
     .catch((error) => console.error("Error fetching data:", error));
 }
 
-function displayProductCards(data) {
+function displayFood(data) {
   const modalBack = document.getElementsByClassName("modal-back")[0];
   modalBack.onclick = (e) => {
     if (e.target.classList.contains("modal-back"))
@@ -43,15 +48,15 @@ function displayProductCards(data) {
 
     card.onclick = () => {
       modalBack.classList.toggle("close");
-      const name = modalBack.getElementsByTagName('h2')[0];
+      const name = modalBack.getElementsByTagName("h2")[0];
       name.innerText = data[i].name;
-      const text = modalBack.getElementsByTagName('p')[0];
+      const text = modalBack.getElementsByTagName("p")[0];
       text.innerText = data[i].description;
-      const modalImg = modalBack.getElementsByTagName('img')[0];
+      const modalImg = modalBack.getElementsByTagName("img")[0];
       modalImg.src = `../cardsImg/${data[i].img_url}`;
-      const price = modalBack.getElementsByClassName('price')[0];
+      const price = modalBack.getElementsByClassName("price")[0];
       price.innerText = `${data[i].price} р.`;
-      const weight = modalBack.getElementsByClassName('weight')[0];
+      const weight = modalBack.getElementsByClassName("weight")[0];
       weight.innerText = `Вес: ${data[i].weight} г.`;
       console.log(data[i]);
     };
@@ -59,13 +64,22 @@ function displayProductCards(data) {
   }
 }
 
-const categoryBtns = document.getElementsByClassName("bnt-menu");
-for (let i = 0; i < categoryBtns.length; i++) {
-  categoryBtns[i].onclick = () => {
-    for (let x = 0; x < categoryBtns.length; x++) {
-      categoryBtns[x].classList.remove("active");
-    }
-    getData(categoryBtns[i].id);
-    categoryBtns[i].classList.add("active");
-  };
+function displayDrinks(data) {
+  const cards = document.getElementsByClassName("drinks")[0];
+  for (let i = 0; i < data.length; i++) {
+    const card = document.createElement("div");
+    const rubels = Math.floor(data[i].price);
+    const kopeiki = ((data[i].price - rubels) * 100).toFixed(0);
+    card.classList.add("drinkCard");
+    card.innerHTML = `
+    <div class="name">
+      <h2>${data[i].name}</h2>
+      <p>${data[i].description}</p>
+    </div>
+    <p class="volume">${data[i].weight} мл.</p>
+    <p class="price">${rubels}р ${kopeiki}к</p>
+    `;
+
+    cards.appendChild(card);
+  }
 }
