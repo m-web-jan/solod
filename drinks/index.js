@@ -57,8 +57,12 @@ async function getData(category, classes) {
 function displayDrinks(data, classes) {
   const cards = document.getElementsByClassName(classes[0])[0];
   for (let i = 0; i < data.length; i++) {
-    const rubels = Math.floor(data[i].price);
-    const kopeiki = ((data[i].price - rubels) * 100).toFixed(0);
+    let rubels = Math.floor(data[i].price);
+    let kopeiki = ((data[i].price - rubels) * 100).toFixed(0);
+    if (data[0].price[data[0].price.length-1]=='°') {
+      rubels = '';
+      kopeiki = '';
+    }
     const card = document.createElement("div");
     card.classList.add(classes[1]);
     card.innerHTML = `
@@ -69,10 +73,10 @@ function displayDrinks(data, classes) {
               </div>
             </div>
             <div class="napitki-weight">
-              <p>${data[i].weight} мл.</p>
+              <p>${data[i].weight !== '' ? + data[i].weight + 'мл.' : ''}</p>
             </div>
             <div class="napitki-price">
-              <p>${rubels}Р<small>${kopeiki}К</small></p>
+              <p>${rubels==''?data[i].price:rubels+'Р<small> '+kopeiki+'К</small>'}</p>
             </div>
             `;
     cards.appendChild(card);
@@ -82,6 +86,11 @@ function displayDrinks(data, classes) {
 getData("Напитки", ['napitki-head', 'alk-content', 'napitki-name', 'napitki-description']);
 getData("Чай", ['tea-block', 'alk-content', 'napitki-name', 'napitki-description']);
 getData("Кофе", ['coffe-block', 'alk-content', 'napitki-name', 'napitki-description']);
+getData("Настойки", ['name-product', 'alk-content', 'napitki-name', 'napitki-description']);
+getData("Наливки", ['name-product1', 'alk-content', 'napitki-name', 'napitki-description']);
+getData("Сет", ['sets-head', 'sets-content', 'sets-name', 'sets-description']);
+getData("Разливное", ['beer-head', 'sets-content', 'sets-name', 'sets-description']);
+
 
 
 
